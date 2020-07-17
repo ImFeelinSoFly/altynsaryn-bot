@@ -1025,6 +1025,7 @@ def callbacks(call):
                          reply_markup=successful_payment(call.from_user.id))
         bot.delete_message(call.message.chat.id, call.message.message_id)
         bot.send_message(call.message.chat.id, text='Ваш заказ принят, ожидайте подтверждения')
+        flag_for_confirmation_of_payment = 0
     elif call.data == 'disconf':
         bot.delete_message(call.message.chat.id, call.message.message_id)
         flag_for_confirmation_of_payment = 0
