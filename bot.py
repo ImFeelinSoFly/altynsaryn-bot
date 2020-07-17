@@ -8,6 +8,7 @@ import const
 
 from telebot import types
 from telebot.types import LabeledPrice
+
 flag_for_cancel_payment = 0
 flag_for_confirmation_of_payment = 0
 flag = 0
@@ -135,7 +136,7 @@ def payment_method():
     but_1 = types.InlineKeyboardButton(text='Банковской картой', callback_data='pay' + payment_course + 'credit card')
     but_2 = types.InlineKeyboardButton(text='Qiwi кошелек', callback_data='pay' + payment_course + 'qiwi wallet')
     but_3 = types.InlineKeyboardButton(text='Kaspi Gold', callback_data='pay' + payment_course + 'kaspi gold')
-    but_4 = types.InlineKeyboardButton(text='Отмена',callback_data='cancel')
+    but_4 = types.InlineKeyboardButton(text='Отмена', callback_data='cancel')
     pm.add(but_1, but_2, but_3)
     pm.add(but_4)
     return pm
@@ -143,8 +144,8 @@ def payment_method():
 
 def credit_keyboard(amount, url, payment_course):
     ck = types.InlineKeyboardMarkup(row_width=1)
-    but_1 = types.InlineKeyboardButton(text='Оплатить ' + str(amount), url=url, callback_data='money')
-    but_2 = types.InlineKeyboardButton(text='Назад', callback_data=payment_course[3:])
+    but_1 = types.InlineKeyboardButton(text='Оплатить ' + str(amount), url=url)
+    but_2 = types.InlineKeyboardButton(text='Назад', callback_data=payment_course[3:] + 'repeat')
     ck.add(but_1, but_2)
     return ck
 
@@ -980,17 +981,17 @@ def callbacks(call):
                                            'оплатить\nhttps://secure.tap2pay.me/products/6PsHzmg9/telegram',
                                       reply_markup=credit_keyboard('5000',
                                                                    'https://oplata.qiwi.com/form?invoiceUid=12252f8a-cf6d-4417-9243-4b137f68fdfd',
-                                                                   payment_course))
+                                                                   call.data))
             elif 'wallet' == call.data[-6:]:
                 bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
                                       text='Вы выбрали оплату через Qiwi кошелек:\nПереведите 5000 на номер 4353454535234',
                                       reply_markup=credit_keyboard('5000',
                                                                    'https://oplata.qiwi.com/form?invoiceUid=12252f8a-cf6d-4417-9243-4b137f68fdfd',
-                                                                   payment_course))
+                                                                   call.data))
             else:
                 bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
                                       text='Вы выбрали оплату через Kaspi Gold:\nПереведите 5000 на карту 424242424244242424424',
-                                      reply_markup=credit_keyboard('5000', 'https://github.com/', payment_course))
+                                      reply_markup=credit_keyboard('5000', 'https://github.com/', call.data))
         elif 'all' in call.data:
             if 'card' == call.data[-4:]:
                 bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
@@ -1037,9 +1038,10 @@ def callbacks(call):
     elif call.data == 'comments':
         bot.send_message(call.from_user.id, text='Здесь вы можете посмотреть отзывы здесь:\nLink')
     elif call.data == 'cancel':
-        bot.delete_message(call.from_user.id,call.message.message_id)
+        bot.delete_message(call.from_user.id, call.message.message_id)
         flag_for_cancel_payment = 0
-    elif 'pay' not in call.data and not flag_for_cancel_payment:
+        flag = 0
+    elif 'pay' not in call.data and (not flag_for_cancel_payment or 'repeat' in call.data):
         if not flag:
             flag = 1
             flag_for_cancel_payment = 1
@@ -1383,4 +1385,4 @@ def essential(message):
         bot.send_photo(message.chat.id, photo=photo, caption=text, reply_markup=one_course(payment_course, url, school))
 
 
-bot.polling(none_stop=True,timeout=123)
+bot.polling(none_stop=True, timeout=123)
