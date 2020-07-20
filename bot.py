@@ -9,9 +9,6 @@ import const
 from telebot import types
 from telebot.types import LabeledPrice
 
-flag_for_cancel_payment = 0
-flag_for_confirmation_of_payment = 0
-flag = 0
 bot = telebot.TeleBot(const.TOKEN)
 
 """conn = mysql.connector.connect(user='root', password='idris6397', host='127.0.0.1', database='testshit',
@@ -955,7 +952,7 @@ def schools(query):
 @bot.callback_query_handler(func=lambda call: True)
 def callbacks(call):
     print(call.data)
-    global payment_course, flag, user, flag_for_confirmation_of_payment, flag_for_cancel_payment
+    global payment_course, flag, user, flag_for_confirmation_of_payment, flag_for_cancel_payment, flag_moderator, flag_copyright, flag_new_com, flag_comments
     if 'success' in call.data:
         chat_id = ''.join([i for i in call.data[-13:] if i.isdigit()])
         bot.send_message(909435473, text='Заказ под номером  ' + chat_id + ' подтвержден от ' + user)
@@ -1030,14 +1027,22 @@ def callbacks(call):
         bot.delete_message(call.message.chat.id, call.message.message_id)
         flag_for_confirmation_of_payment = 0
     elif call.data == 'moderator':
-        bot.send_message(chat_id=call.from_user.id, text='По всем вопросам пишите:\n@official_aldarkose')
+        if not flag_moderator:
+            flag_moderator = 1
+            bot.send_message(chat_id=call.from_user.id, text='По всем вопросам пишите:\n@official_aldarkose')
     elif call.data == 'copyright':
-        bot.send_message(chat_id=call.from_user.id,
+        if not flag_copyright:
+            flag_copyright = 1
+            bot.send_message(chat_id=call.from_user.id,
                          text='Если вы обладатель курса, то можете оставить жалобу здесь:\n@AltynsarynCopyrightBot')
     elif call.data == 'new_com':
-        bot.send_message(call.from_user.id, text='Вы можете написать отзыв здесь:\n@AlynsarynCommentsBot')
+        if not flag_new_com:
+            flag_new_com = 1
+            bot.send_message(call.from_user.id, text='Вы можете написать отзыв здесь:\n@AlynsarynCommentsBot')
     elif call.data == 'comments':
-        bot.send_message(call.from_user.id, text='Здесь вы можете посмотреть отзывы здесь:\nLink')
+        if not flag_comments:
+            flag_comments = 1
+            bot.send_message(call.from_user.id, text='Здесь вы можете посмотреть отзывы здесь:\nLink')
     elif call.data == 'cancel':
         bot.delete_message(call.from_user.id, call.message.message_id)
         flag_for_cancel_payment = 0
@@ -1085,7 +1090,14 @@ def startpg(message):
     main_menu.add(but_4, but_5)
     bot.send_message(message.chat.id,
                      'Я бот, который продает курсы по программированию !\n', reply_markup=main_menu)
-    global previous_message_id, chat_id, payment_course
+    global previous_message_id, chat_id, payment_course, flag_for_cancel_payment, flag_for_confirmation_of_payment, flag, flag_moderator, flag_copyright, flag_new_com, flag_comments
+    flag_for_cancel_payment = 0
+    flag_for_confirmation_of_payment = 0
+    flag = 0
+    flag_moderator = 0
+    flag_copyright = 0
+    flag_new_com = 0
+    flag_comments = 0
     previous_message_id = message.message_id + 3
     chat_id = message.chat.id
     payment_course = ''
@@ -1093,9 +1105,15 @@ def startpg(message):
 
 @bot.message_handler(content_types=['text'])
 def essential(message):
-    global payment_course, flag
+    global payment_course, flag, flag_for_cancel_payment, flag_for_confirmation_of_payment, flag_moderator, flag_copyright, flag_new_com, flag_comments
     photo = 0
     flag = 0
+    flag_for_confirmation_of_payment = 0
+    flag_for_cancel_payment = 0
+    flag_moderator = 0
+    flag_copyright = 0
+    flag_new_com = 0
+    flag_comments = 0
     payment_course = message.text
     global previous_message_id, chat_id
     chat_id = message.chat.id
