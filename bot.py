@@ -951,7 +951,7 @@ def schools(query):
 
 @bot.callback_query_handler(func=lambda call: True)
 def callbacks(call):
-    #print(call.data)
+    print(call.data)
     global payment_course, flag, user, flag_for_confirmation_of_payment, flag_for_cancel_payment, flag_moderator, flag_copyright, flag_new_com, flag_comments
     if 'success' in call.data:
         chat_id = ''.join([i for i in call.data[-13:] if i.isdigit()])
