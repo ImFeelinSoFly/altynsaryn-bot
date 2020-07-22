@@ -142,7 +142,7 @@ def payment_method():
 def credit_keyboard(amount, url, payment_course):
     ck = types.InlineKeyboardMarkup(row_width=1)
     but_1 = types.InlineKeyboardButton(text='Оплатить ' + str(amount), url=url)
-    but_2 = types.InlineKeyboardButton(text='Назад', callback_data=payment_course[3:] + 'repeat')
+    but_2 = types.InlineKeyboardButton(text='Назад', callback_data=payment_course[3:] + 'rep')
     ck.add(but_1, but_2)
     return ck
 
@@ -1047,7 +1047,7 @@ def callbacks(call):
         bot.delete_message(call.from_user.id, call.message.message_id)
         flag_for_cancel_payment = 0
         flag = 0
-    elif 'pay' not in call.data and (not flag_for_cancel_payment or 'repeat' in call.data):
+    elif 'pay' not in call.data and (not flag_for_cancel_payment or 'rep' in call.data):
         if not flag:
             flag = 1
             flag_for_cancel_payment = 1
@@ -1104,6 +1104,305 @@ def startpg(message):
 
 
 @bot.message_handler(content_types=['text'])
+def essential(message):
+    print('asdfdsf')
+    global payment_course, flag, flag_for_cancel_payment, flag_for_confirmation_of_payment, flag_moderator, flag_copyright, flag_new_com, flag_comments
+    photo = 0
+    flag = 0
+    flag_for_confirmation_of_payment = 0
+    flag_for_cancel_payment = 0
+    flag_moderator = 0
+    flag_copyright = 0
+    flag_new_com = 0
+    flag_comments = 0
+    payment_course = message.text
+    global previous_message_id, chat_id
+    chat_id = message.chat.id
+    school = ''.join([i for i in message.text if not i.isdigit()])
+    url = 'https://www.geeksforgeeks.org/python-ways-to-remove-numeric-digits-from-given-string/'
+    try:
+        i = 0
+        while previous_message_id + i < message.message_id:
+            bot.delete_message(message.chat.id, previous_message_id + i)
+            i += 1
+        previous_message_id = message.message_id
+    except:
+        previous_message_id = message.message_id
+    if message.text == 'Все 999 курса за 100кзт':
+        bot.send_message(message.chat.id, text='Nurzhik krossovok')
+    elif message.text == 'geekbrains1':
+        text = 'text1'
+        photo = geekbrains_courses[0]
+    elif message.text == 'geekbrains2':
+        text = ''
+        photo = geekbrains_courses[1]
+    elif message.text == 'geekbrains3':
+        text = ''
+        photo = geekbrains_courses[2]
+    elif message.text == 'geekbrains4':
+        text = ''
+        photo = geekbrains_courses[3]
+    elif message.text == 'geekbrains5':
+        text = ''
+        photo = geekbrains_courses[4]
+    elif message.text == 'geekbrains6':
+        text = ''
+        photo = geekbrains_courses[5]
+    elif message.text == 'geekbrains7':
+        text = ''
+        photo = geekbrains_courses[6]
+    elif message.text == 'geekbrains8':
+        text = ''
+        photo = geekbrains_courses[7]
+    elif message.text == 'geekbrains9':
+        text = ''
+        photo = geekbrains_courses[8]
+    elif message.text == 'geekbrains10':
+        text = ''
+        photo = geekbrains_courses[9]
+    elif message.text == 'geekbrains11':
+        text = ''
+        photo = geekbrains_courses[10]
+    elif message.text == 'geekbrains12':
+        text = ''
+        photo = geekbrains_courses[11]
+    elif message.text == 'geekbrains13':
+        text = ''
+        photo = geekbrains_courses[12]
+    elif message.text == 'geekbrains14':
+        text = ''
+        photo = geekbrains_courses[13]
+    elif message.text == 'geekbrains15':
+        text = ''
+        photo = geekbrains_courses[14]
+    elif message.text == 'netology1':
+        text = ''
+        photo = netology_courses[0]
+    elif message.text == 'netology2':
+        text = ''
+        photo = netology_courses[1]
+    elif message.text == 'netology3':
+        text = ''
+        photo = netology_courses[2]
+    elif message.text == 'netology4':
+        text = ''
+        photo = netology_courses[3]
+    elif message.text == 'netology5':
+        text = ''
+        photo = netology_courses[4]
+    elif message.text == 'netology6':
+        text = ''
+        photo = netology_courses[5]
+    elif message.text == 'netology7':
+        text = ''
+        photo = netology_courses[6]
+    elif message.text == 'netology8':
+        text = ''
+        photo = netology_courses[7]
+    elif message.text == 'netology9':
+        text = ''
+        photo = netology_courses[8]
+    elif message.text == 'netology10':
+        text = ''
+        photo = netology_courses[9]
+    elif message.text == 'netology11':
+        text = ''
+        photo = netology_courses[10]
+    elif message.text == 'netology12':
+        text = ''
+        photo = netology_courses[11]
+    elif message.text == 'netology13':
+        text = ''
+        photo = netology_courses[12]
+    elif message.text == 'netology14':
+        text = ''
+        photo = netology_courses[13]
+    elif message.text == 'netology15':
+        text = ''
+        photo = netology_courses[14]
+    elif message.text == 'skillbox1':
+        text = ''
+        photo = skillbox_courses[0]
+    elif message.text == 'skillbox2':
+        text = ''
+        photo = skillbox_courses[1]
+    elif message.text == 'skillbox3':
+        text = ''
+        photo = skillbox_courses[2]
+    elif message.text == 'skillbox4':
+        text = ''
+        photo = skillbox_courses[3]
+    elif message.text == 'skillbox5':
+        text = ''
+        photo = skillbox_courses[4]
+    elif message.text == 'skillbox6':
+        text = ''
+        photo = skillbox_courses[5]
+    elif message.text == 'skillbox7':
+        text = ''
+        photo = skillbox_courses[6]
+    elif message.text == 'skillbox8':
+        text = ''
+        photo = skillbox_courses[7]
+    elif message.text == 'skillbox9':
+        text = ''
+        photo = skillbox_courses[8]
+    elif message.text == 'skillbox10':
+        text = ''
+        photo = skillbox_courses[9]
+    elif message.text == 'skillbox11':
+        text = ''
+        photo = skillbox_courses[10]
+    elif message.text == 'skillbox12':
+        text = ''
+        photo = skillbox_courses[11]
+    elif message.text == 'skillbox13':
+        text = ''
+        photo = skillbox_courses[12]
+    elif message.text == 'skillbox14':
+        text = ''
+        photo = skillbox_courses[13]
+    elif message.text == 'skillbox15':
+        text = ''
+        photo = skillbox_courses[14]
+    elif message.text == 'udemy1':
+        text = ''
+        photo = udemy_courses[0]
+    elif message.text == 'udemy2':
+        text = ''
+        photo = udemy_courses[1]
+    elif message.text == 'udemy3':
+        text = ''
+        photo = udemy_courses[2]
+    elif message.text == 'udemy4':
+        text = ''
+        photo = udemy_courses[3]
+    elif message.text == 'udemy5':
+        text = ''
+        photo = udemy_courses[4]
+    elif message.text == 'udemy6':
+        text = ''
+        photo = udemy_courses[5]
+    elif message.text == 'udemy7':
+        text = ''
+        photo = udemy_courses[6]
+    elif message.text == 'udemy8':
+        text = ''
+        photo = udemy_courses[7]
+    elif message.text == 'udemy9':
+        text = ''
+        photo = udemy_courses[8]
+    elif message.text == 'udemy10':
+        text = ''
+        photo = udemy_courses[9]
+    elif message.text == 'udemy11':
+        text = ''
+        photo = udemy_courses[10]
+    elif message.text == 'udemy12':
+        text = ''
+        photo = udemy_courses[11]
+    elif message.text == 'udemy13':
+        text = ''
+        photo = udemy_courses[12]
+    elif message.text == 'udemy14':
+        text = ''
+        photo = udemy_courses[13]
+    elif message.text == 'udemy15':
+        text = ''
+        photo = udemy_courses[14]
+    elif message.text == 'webformyself1':
+        text = ''
+        photo = webformyself_courses[0]
+    elif message.text == 'webformyself2':
+        text = ''
+        photo = webformyself_courses[1]
+    elif message.text == 'webformyself3':
+        text = ''
+        photo = webformyself_courses[2]
+    elif message.text == 'webformyself4':
+        text = ''
+        photo = webformyself_courses[6]
+    elif message.text == 'webformyself5':
+        text = ''
+        photo = webformyself_courses[4]
+    elif message.text == 'webformyself6':
+        text = ''
+        photo = webformyself_courses[5]
+    elif message.text == 'webformyself7':
+        text = ''
+        photo = webformyself_courses[6]
+    elif message.text == 'webformyself8':
+        text = ''
+        photo = webformyself_courses[7]
+    elif message.text == 'webformyself9':
+        text = ''
+        photo = webformyself_courses[8]
+    elif message.text == 'webformyself10':
+        text = ''
+        photo = webformyself_courses[9]
+    elif message.text == 'webformyself11':
+        text = ''
+        photo = webformyself_courses[10]
+    elif message.text == 'webformyself12':
+        text = ''
+        photo = webformyself_courses[11]
+    elif message.text == 'webformyself13':
+        text = ''
+        photo = webformyself_courses[12]
+    elif message.text == 'webformyself14':
+        text = ''
+        photo = webformyself_courses[13]
+    elif message.text == 'webformyself15':
+        text = ''
+        photo = webformyself_courses[14]
+    elif message.text == 'otus1':
+        text = ''
+        photo = otus_courses[0]
+    elif message.text == 'otus2':
+        text = ''
+        photo = otus_courses[1]
+    elif message.text == 'otus3':
+        text = ''
+        photo = otus_courses[2]
+    elif message.text == 'otus4':
+        text = ''
+        photo = otus_courses[3]
+    elif message.text == 'otus5':
+        text = ''
+        photo = otus_courses[4]
+    elif message.text == 'otus6':
+        text = ''
+        photo = otus_courses[5]
+    elif message.text == 'otus7':
+        text = ''
+        photo = otus_courses[6]
+    elif message.text == 'otus8':
+        text = ''
+        photo = otus_courses[7]
+    elif message.text == 'otus9':
+        text = ''
+        photo = otus_courses[8]
+    elif message.text == 'otus10':
+        text = ''
+        photo = otus_courses[9]
+    elif message.text == 'otus11':
+        text = ''
+        photo = otus_courses[10]
+    elif message.text == 'otus12':
+        text = ''
+        photo = otus_courses[11]
+    elif message.text == 'otus13':
+        text = ''
+        photo = otus_courses[12]
+    elif message.text == 'otus14':
+        text = ''
+        photo = otus_courses[13]
+    elif message.text == 'otus15':
+        text = ''
+        photo = otus_courses[14]
+
+    if photo:
+        bot.send_photo(message.chat.id, photo=photo, caption=text, reply_markup=one_course(payment_course, url, school))
 def essential(message):
     global payment_course, flag, flag_for_cancel_payment, flag_for_confirmation_of_payment, flag_moderator, flag_copyright, flag_new_com, flag_comments
     photo = 0
