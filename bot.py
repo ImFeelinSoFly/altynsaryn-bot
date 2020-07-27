@@ -417,14 +417,14 @@ geekbrains_courses = [
 netology_courses = [
     'AgACAgIAAxkBAAICj18POWIa_dCOW3xtfASdcJxY2gy0AAL4rTEbtmeBSMe2T-GyIY2EkAHlkS4AAwEAAwIAA20AAwFLBAABGgQ',
     'AgACAgIAAxkBAAICkF8POWZw75krya3GWhbEsHvxe7LkAAIDrjEbtmeBSBsNr-OFrhYWVYZvkS4AAwEAAwIAA20AA-WrBQABGgQ',
-    'AgACAgIAAxkBAAICkV8POWh017s7dra4xaf8Bf3zRcq-AAInrjEbtmeBSJkWXK9Ip_x0HhHokS4AAwEAAwIAA20AA99OBAABGgQ',
+    'AgACAgIAAxkBAAIQZ18eoMqpaFtmoZ7zNPe0QIsTBJ4xAAIerzEbTQbwSOeCdx8QktfqlZ91kS4AAwEAAwIAA20AAwovBgABGgQ',
     'AgACAgIAAxkBAAICkl8POWx5tr4sIa1NFZaZFF0o8ZjvAAIorjEbtmeBSIwC2DmP5yHVHn3jkS4AAwEAAwIAA20AAzdUBAABGgQ',
     'AgACAgIAAxkBAAICk18POXLfMv0MFijAZ6nXF46Uj1nsAAL-rTEbtmeBSIuioEsXyX_iGrC9ki4AAwEAAwIAA20AAyloBAABGgQ',
     'AgACAgIAAxkBAAIClF8POXpF43h5QcVUPDHV48G-EDU8AAIprjEbtmeBSPOB0aJZVsW5kMvDki4AAwEAAwIAA20AA7hlBAABGgQ',
     'AgACAgIAAxkBAAIClV8POX1YN8LLA-W5vNwh7LEBftt-AAIqrjEbtmeBSEfVGa74JcYFWRPeky4AAwEAAwIAA20AA668AgABGgQ',
     'AgACAgIAAxkBAAICll8POYORBnhzEnElCjeCMzB5uqAaAAIrrjEbtmeBSECJP9D38ApUS8rDki4AAwEAAwIAA20AA95oBAABGgQ',
     'AgACAgIAAxkBAAICl18POYfIYojJNiebiMxybt--ZIfmAAIsrjEbtmeBSCCtz6Qj95mc7A4Fki4AAwEAAwIAA20AA6fJAwABGgQ',
-    'AgACAgIAAxkBAAICmF8POYwj5AiI41U6lFLMRrYQSHnZAAInrjEbtmeBSJkWXK9Ip_x0HhHokS4AAwEAAwIAA20AA99OBAABGgQ',
+    'AgACAgIAAxkBAAIQZ18eoMqpaFtmoZ7zNPe0QIsTBJ4xAAIerzEbTQbwSOeCdx8QktfqlZ91kS4AAwEAAwIAA20AAwovBgABGgQ',
     'AgACAgIAAxkBAAICmV8POZOyMJKiXF_OSfHS-Sia-sDCAAItrjEbtmeBSIOCKNIQGTSfI3lPkS4AAwEAAwIAA20AA1HoBQABGgQ',
     'AgACAgIAAxkBAAICml8POZcP3eqINcQjZYZ--f7Sn-EeAAIurjEbtmeBSPmVJI8p3KCFVaG6ki4AAwEAAwIAA20AA5FqBAABGgQ',
     'AgACAgIAAxkBAAIPS18da6FP-Uoaw6SPYMgxsUzL-CYyAAJBrzEbWwPwSK-bUsjw2yN5rO0ZlS4AAwEAAwIAA20AA4gEAgABGgQ',
@@ -466,7 +466,7 @@ skillbox_courses = [
     'AgACAgIAAxkBAAICcV8PNdcsSNzdca4eytUfETeChcNBAAIPrjEbtmeBSOE-LTWO9a8VjCV3kS4AAwEAAwIAA20AAx2mBQABGgQ',
     'AgACAgIAAxkBAAICcl8PNdzqFJ1t837M2Zp8Wpomra27AAL8rTEbtmeBSAUHrkl4L_uqeIeVlS4AAwEAAwIAA20AAyeQAQABGgQ',
     'AgACAgIAAxkBAAICc18PNeKK0DoF8a5JWqM3_SGvNduJAAIQrjEbtmeBSECRpbGrUndkapWYlS4AAwEAAwIAA20AA6iQAQABGgQ',
-    'AgACAgIAAxkBAAICdF8PNe2DkcjFCmqnX9a8yrF8qQABXwACEa4xG7ZngUiY1Xraq135X1C0g5IuAAMBAAMCAANtAAPvxwMAARoE',
+    'AgACAgIAAxkBAAIQAl8ejZh75UyGsgjt9Dr-WVpn9ZnSAAIJrzEbTQbwSM7_4fU-LCnZsXXrki4AAwEAAwIAA20AA99NBAABGgQ',
     'AgACAgIAAxkBAAICdV8PNe7MSNn6LP8pY5gcD9uGaHAmAAISrjEbtmeBSCauD9vcumoPnIjmkS4AAwEAAwIAA20AA7dLBAABGgQ',
     'AgACAgIAAxkBAAICdl8PNfTn3K1xJAoQM2N7RtB0kvZ6AAITrjEbtmeBSIOoUf5MOcnGThLokS4AAwEAAwIAA20AA4NNBAABGgQ',
     'AgACAgIAAxkBAAICd18PNfrwWkjGOnNsXH8vDDqkVRYhAAIUrjEbtmeBSIV4wPYQ6-2VdKPskS4AAwEAAwIAA20AA4taBAABGgQ',
@@ -492,6 +492,98 @@ udemy_courses = ['AgACAgIAAxkBAAICnl8POdyrMZiSOx8okKDqBzG5nW8AAyeuMRu2Z4FImRZcr0
                  'AgACAgIAAxkBAAICqV8POgu76vAugw6kKhjrli26QgNoAAI6rjEbtmeBSKAhxvX5yjYjMHcblS4AAwEAAwIAA20AAweNAQABGgQ',
                  'AgACAgIAAxkBAAICql8POhFXilkcnGHZdizijEdumYodAAI7rjEbtmeBSLAB-vi88XRe41v4lC4AAwEAAwIAA20AA5f7AQABGgQ',
                  'AgACAgIAAxkBAAICq18POhNFToTrYEOckiZMnr06F5AjAAI8rjEbtmeBSNJJPDAlIh0cPwLlkS4AAwEAAwIAA20AA3hVBAABGgQ']
+geekbrains_clouds = [('https://cloud.mail.ru/public/45dt/2sXphnx7S', '', ''),
+                     ('https://cloud.mail.ru/public/3Qe2/3VC32qu1D', '', ''),
+                     ('https://cloud.mail.ru/public/3mmv/jHRmscBiR', 'v9utq9c78=qv4q3t', ''),
+                     ('https://cloud.mail.ru/public/2U2A/1m9nFpAqT', '', ''),
+                     ('https://cloud.mail.ru/public/Se6p/5o4mEmQLi', 'WWW.infobit.me@2016', ''),
+                     ('https://cloud.mail.ru/public/3x5q/28uLwUjcr', '', ''),
+                     ('https://cloud.mail.ru/public/45Ae/eXCyArpUT', '', ''),
+                     ('https://mega.nz/#F!f65DySiC!rMkWqMN2G7I-JnRtNADpmg', '',
+                      'Если не открывается ссылка, используйте VPN для загрузки'),
+                     ('https://cloud.mail.ru/public/3GeF/5P7vWpnWn', '', ''),
+                     ('https://cloud.mail.ru/public/3QdZ/3sSxF5QC3', '', ''),
+                     ('https://cloud.mail.ru/public/gT3t/5Q3V6Km79', '', ''),
+                     ('https://drive.google.com/drive/folders/0B-R36PiAc5SHSUx2WXREUzlrbWs', '', ''),
+                     ('https://yadi.sk/d/TOdytdXcUZ7UCQ', '', ''),
+                     ('https://yadi.sk/d/ONylu_t6J5DN8g', '', ''),
+                     ('https://cloud.mail.ru/public/L5Mn/vujyoaRmk', '', ''),
+                     (
+                         'https://docs.google.com/document/d/1G4vGhR9JDNN77KBXo62evDYEKnaalJ8WoNMKoFxuQdM/edit?usp=sharing',
+                         '', '')]
+skillbox_clouds = [('https://cloud.mail.ru/public/2Bj1/5c2pvbnbB', '', ''),
+                   ('https://cloud.mail.ru/public/46vF/43wWAnWzd', '', ''),
+                   ('https://cloud.mail.ru/public/4wJ8/PMnPcxF8G', '', ''),
+                   ('https://yadi.sk/d/DcNTOdb32MWL_w', '', ''),
+                   ('https://cloud.mail.ru/public/2LBc/3ANHJiJ7X', '', ''),
+                   ('https://cloud.mail.ru/public/4E5L/2gTjSoMQD', '', ''),
+                   ('https://cloud.mail.ru/public/34E5/2JQdKzQa5', '', ''),
+                   ('https://cloud.mail.ru/public/54YG/3K5B1EDuV', '', ''),
+                   ('https://cloud.mail.ru/public/MvKY/AzmKmtbaX', '', ''),
+                   ('https://cloud.mail.ru/public/3c4B/4hE4m4svK', '', ''),
+                   ('https://yadi.sk/d/JaM2OX52Uka1bQ', '', ''),
+                   ('https://mega.nz/#F!PIUhABrA!BbfEl0AfO_h8QkaGlq-31w', '4z9dj_7kE>8d',
+                    'Если не открывается ссылка, используйте VPN для загрузки'),
+                   (
+                       'https://www.obuka.org/course/skillbox-figma-3-0-2019/6468-modul-1-vvedenie-v-figma-obzor-vozmojnostey/?p=1',
+                       '', ''),
+                   ('https://cloud.mail.ru/public/4XFp/Gw9N6p8bk', '', ''),
+                   ('https://cloud.mail.ru/public/59AT/3UGXJwvyA', '', ''),
+                   ('https://docs.google.com/document/d/1YICN4AqVNM68Mb3m6ArJO4TunhN2guyRXzcdQKi5VQc/edit?usp=sharing',
+                    '', '')]
+webformyself_clouds = [('https://cloud.mail.ru/public/5mpi/3jrGzfXTr', '*P06WOAQCYpudFWt38GL', ''),
+                       ('https://cloud.mail.ru/public/475o/5nWcfgdq2', '', ''),
+                       ('https://cloud.mail.ru/public/4KYu/4c5HnB2s4 ', 'PnURDCcK+umtoqi+X5-r', ''),
+                       ('https://cloud.mail.ru/public/5tAG/2WAdLbWFr', '', ''),
+                       ('https://cloud.mail.ru/public/4zuC/PGfKq7GKN', '', ''),
+                       ('https://cloud.mail.ru/public/5gVF/32QFwdctH', '', ''),
+                       ('https://cloud.mail.ru/public/3pbT/3PiqyJJgi', 'boominfo.ru', ''),
+                       ('https://cloud.mail.ru/public/3GoN/mKTRHWMN9', 'iG3DgL8gaapAYvdslNbH', ''),
+                       ('https://cloud.mail.ru/public/2kNB/3SV1rp3Gv', '', ''),
+                       ('https://cloud.mail.ru/public/4C6B/zzwrkibck', '', ''),
+                       ('https://drive.google.com/file/d/0ByrBQHjtdyvxalFmT1BqR2hGN2c/view', '', ''),
+                       ('https://cloud.mail.ru/public/4Vmb/VKHqoRcxc', '', ''),
+                       ('https://cloud.mail.ru/public/3epA/3KDZMqueV', '', ''),
+                       ('https://cloud.mail.ru/public/23JP/29QeD7PAY', '', ''),
+                       ('https://drive.google.com/uc?id=0B_CgcOGcfxd9c21EQTBZWnZ3alU&export=download', '', ''),
+                       (
+                           'https://docs.google.com/document/d/1c2AOfLPT0UqkGOv_1YeFe1_1L7oJz1wTRGa4Si-R2LI/edit?usp=sharing',
+                           '', '')]
+netology_clouds = [('https://yadi.sk/d/0oAsDnYilAuqnQ', 'ASdkzxczmr234', ''),
+                   ('https://cloud.mail.ru/public/2UEK/rRLKv5P8N', '', ''),
+                   ('https://cloud.mail.ru/public/3iQd/32GvAbcAE', '', ''),
+                   ('https://yadi.sk/d/wIX0BbWERd28gA', '', ''),
+                   ('https://cloud.mail.ru/public/3Lc6/56YfZZLYx', '', ''),
+                   ('https://cloud.mail.ru/public/2rBY/3Fmx8uCrm', '', ''),
+                   ('https://cloud.mail.ru/public/26pG/kmvQsxA8n', '', ''),
+                   ('https://cloud.mail.ru/public/3mRG/3mpHDQEcN', '', ''),
+                   ('https://cloud.mail.ru/public/4H8j/5n2VowXjf', '', ''),
+                   ('https://yadi.sk/d/lkEbSYroP-kqjw', 'www.infosklad.org', ''),
+                   ('https://cloud.mail.ru/public/4yUD/TxkzXytMJ', '79809puhjgfdgAW', ''),
+                   ('https://cloud.mail.ru/public/39hC/35rjs8RnS', '', ''),
+                   ('https://cloud.mail.ru/public/5oDw/52mXULe9B', '', ''),
+                   ('https://cloud.mail.ru/public/5ndq/2k8ZYKS6s', '', ''),
+                   ('https://cloud.mail.ru/public/2AKj/2hRsUiXrD', '', ''),
+                   ('https://docs.google.com/document/d/1Gukyj_mhaEM61rGxrmquvT35qQBIGXUFqezQlMF_HtY/edit?usp=sharing',
+                    '', '')]
+udemy_clouds = [('https://cloud.mail.ru/public/2vnq/KAvTyy5C8', '', ''),
+                ('https://cloud.mail.ru/public/2w8u/3cKh8G2P7', '', ''),
+                ('https://cloud.mail.ru/public/FKvQ/4yJsfw1c9', '', ''),
+                ('https://cloud.mail.ru/public/3Pra/5efk2PAHD', '', ''),
+                ('https://cloud.mail.ru/public/529o/56kMg8AR3', '', ''),
+                ('https://cloud.mail.ru/public/ktq2/5wL5XFnx4', '', ''),
+                ('https://yadi.sk/d/Iu7RlD6Dj7DeYg', '', ''),
+                ('https://cloud.mail.ru/public/44RQ/4zREiFxwZ', '', ''),
+                ('https://cloud.mail.ru/public/3WWE/2Smgkdpi4', '', ''),
+                ('https://cloud.mail.ru/public/2d9S/5jSpt4udg', '', ''),
+                ('https://cloud.mail.ru/public/3nRd/4sjwSgRhj', '', ''),
+                ('https://cloud.mail.ru/public/2uz2/28CXPLb3k', '', ''),
+                ('https://cloud.mail.ru/public/5B9r/3kqX3hdFW', '', ''),
+                ('https://cloud.mail.ru/public/4Gd4/4VUWgSRP2', '', ''),
+                ('https://cloud.mail.ru/public/3rk5/3KgXzFT4u', '', ''),
+                ('https://docs.google.com/document/d/1TOvRB0jVpRa0wTKwYTuMQkqztj6NflMRPoEqlfAgcPU/edit?usp=sharing', '',
+                 '')]
+otus_clouds = []
 
 
 def payment_method(client_id):
@@ -644,24 +736,24 @@ def query_text(query):
     icon_4 = 'https://imagizer.imageshack.com/img922/5692/cNjY8b.png'
     icon_5 = 'https://imagizer.imageshack.com/img924/2395/WwgFJU.png'
     icon_6 = 'https://imagizer.imageshack.com/img923/5373/VDXsBb.png'
-    article_1 = types.InlineQueryResultArticle(id=1, input_message_content=types.InputTextMessageContent('geekbrains'),
+    article_1 = types.InlineQueryResultArticle(id=1, input_message_content=types.InputTextMessageContent('🧠 GeekBrains - образовательный портал IT-профессий'),
                                                title='GeekBrains', description='GeekBrains courses', thumb_url=icon_1,
                                                thumb_width=48, thumb_height=48, reply_markup=gb_school())
-    article_2 = types.InlineQueryResultArticle(id=4, input_message_content=types.InputTextMessageContent('skillbox'),
+    article_2 = types.InlineQueryResultArticle(id=4, input_message_content=types.InputTextMessageContent('📚 SkillBox - онлайн-образование от практиков своего дела'),
                                                title='SkillBox', description='SkillBox courses', thumb_url=icon_2,
                                                thumb_width=48, thumb_height=48, reply_markup=sb_school())
     article_3 = types.InlineQueryResultArticle(id=3,
-                                               input_message_content=types.InputTextMessageContent('webformyself'),
+                                               input_message_content=types.InputTextMessageContent('💻 WebForMySelf - лидер в сфере веб-разработки и сайтостроения'),
                                                title='WebForMyself', description='WebForMyself courses',
                                                thumb_url=icon_3, thumb_width=48, thumb_height=48,
                                                reply_markup=wb_school())
-    article_4 = types.InlineQueryResultArticle(id=2, input_message_content=types.InputTextMessageContent('netology'),
+    article_4 = types.InlineQueryResultArticle(id=2, input_message_content=types.InputTextMessageContent('🏛 Netology - онлайн-университет и источник экспертных знаний'),
                                                title='Netology', description='Netology courses', thumb_url=icon_4,
                                                thumb_width=48, thumb_height=48, reply_markup=nt_school())
-    article_5 = types.InlineQueryResultArticle(id=5, input_message_content=types.InputTextMessageContent('udemy'),
+    article_5 = types.InlineQueryResultArticle(id=5, input_message_content=types.InputTextMessageContent('👨‍💻 Udemy - лучшая образовательная онлайн-платформа'),
                                                title='Udemy', description='Udemy courses', thumb_url=icon_5,
                                                thumb_width=48, thumb_height=48, reply_markup=ud_school())
-    article_6 = types.InlineQueryResultArticle(id=6, input_message_content=types.InputTextMessageContent('otus'),
+    article_6 = types.InlineQueryResultArticle(id=6, input_message_content=types.InputTextMessageContent('👨‍🎓 OTUS - цифровые навыки от ведущих экспертов'),
                                                title='OTUS', description='OTUS courses', thumb_url=icon_6,
                                                thumb_width=48, thumb_height=48, reply_markup=ot_school())
     results = [article_1, article_2, article_3, article_4, article_5, article_6]
@@ -685,26 +777,26 @@ def schools(query):
         pass
     if query.query == 'geekbrains':
         article_1 = types.InlineQueryResultArticle(id=1,
-                                                   input_message_content=types.InputTextMessageContent('geekbrains1'),
+                                                   input_message_content=types.InputTextMessageContent('GeekBrains🧠0️⃣1️⃣'),
                                                    title='Профессия Разработчик игр',
                                                    description='Стань частью игровой индустрии',
                                                    thumb_url='https://imagizer.imageshack.com/img922/6049/wcpahi.jpg',
                                                    reply_markup=gb_school())
         article_2 = types.InlineQueryResultArticle(id=2,
-                                                   input_message_content=types.InputTextMessageContent('geekbrains2'),
+                                                   input_message_content=types.InputTextMessageContent('GeekBrains🧠0️⃣2️⃣'),
                                                    title='Профессия Программист Android',
                                                    description='Разрабатывай под 80% рынка мобильных устройств!',
                                                    thumb_url='https://imagizer.imageshack.com/img922/7097/C2sRw9.png',
                                                    reply_markup=gb_school())
         article_3 = types.InlineQueryResultArticle(id=3,
-                                                   input_message_content=types.InputTextMessageContent('geekbrains3'),
+                                                   input_message_content=types.InputTextMessageContent('GeekBrains🧠0️⃣3️⃣'),
                                                    title='Профессия Frontend-разработчик',
                                                    description='Профессиональная верстка сайтов по современным '
                                                                'стандартам',
                                                    thumb_url='https://imagizer.imageshack.com/img922/5341/CeMvD6.jpg',
                                                    reply_markup=gb_school())
         article_4 = types.InlineQueryResultArticle(id=4,
-                                                   input_message_content=types.InputTextMessageContent('geekbrains4'),
+                                                   input_message_content=types.InputTextMessageContent('GeekBrains🧠0️⃣4️⃣'),
                                                    title='Курс по Agile-методологиям',
                                                    description='Когда дедлайны горят, заказчик дает новые вводные, '
                                                                'а в продуктах встречаются ошибки, используйте '
@@ -712,68 +804,68 @@ def schools(query):
                                                    thumb_url='https://imagizer.imageshack.com/img924/84/i23qQ7.png',
                                                    reply_markup=gb_school())
         article_5 = types.InlineQueryResultArticle(id=5,
-                                                   input_message_content=types.InputTextMessageContent('geekbrains5'),
+                                                   input_message_content=types.InputTextMessageContent('GeekBrains🧠0️⃣5️⃣'),
                                                    title='Профессия Веб-разработчик',
                                                    description='Создай свой фейсбук!С музыкой и нормальным интерфейсом',
                                                    thumb_url='https://imagizer.imageshack.com/img923/6565/dLJYLy.jpg',
                                                    reply_markup=gb_school())
         article_6 = types.InlineQueryResultArticle(id=6,
-                                                   input_message_content=types.InputTextMessageContent('geekbrains6'),
+                                                   input_message_content=types.InputTextMessageContent('GeekBrains🧠0️⃣6️⃣'),
                                                    title='Профессиональная Backend-разработка',
                                                    description='Современные инструменты и лучшие практики для '
                                                                'глубокого понимания процесса backend-разработки ',
                                                    thumb_url='https://imagizer.imageshack.com/img922/3277/V3opMS.png',
                                                    reply_markup=gb_school())
         article_7 = types.InlineQueryResultArticle(id=7,
-                                                   input_message_content=types.InputTextMessageContent('geekbrains7'),
+                                                   input_message_content=types.InputTextMessageContent('GeekBrains🧠0️⃣7️⃣'),
                                                    title='Создание сайтов и приложений. Методы повышения конверсии',
                                                    description='Создавай действительно продающие структуры сайтов',
                                                    thumb_url='https://imagizer.imageshack.com/img923/558/XMlivo.jpg',
                                                    reply_markup=gb_school())
         article_8 = types.InlineQueryResultArticle(id=8,
-                                                   input_message_content=types.InputTextMessageContent('geekbrains8'),
+                                                   input_message_content=types.InputTextMessageContent('GeekBrains🧠0️⃣8️⃣'),
                                                    title='Факультет Python-разработки',
                                                    description='Онлайн-университет от @mail.ru Group',
                                                    thumb_url='https://imagizer.imageshack.com/img924/9392/UCl3tF.jpg',
                                                    reply_markup=gb_school())
         article_9 = types.InlineQueryResultArticle(id=9,
-                                                   input_message_content=types.InputTextMessageContent('geekbrains9'),
+                                                   input_message_content=types.InputTextMessageContent('GeekBrains🧠0️⃣9️⃣'),
                                                    title='Системный администратор',
                                                    description='Незаменимый специалист в любой компании',
                                                    thumb_url='https://imagizer.imageshack.com/img923/8554/aScFbP.jpg',
                                                    reply_markup=gb_school())
         article_10 = types.InlineQueryResultArticle(id=10,
-                                                    input_message_content=types.InputTextMessageContent('geekbrains10'),
+                                                    input_message_content=types.InputTextMessageContent('GeekBrains🧠1️⃣0️⃣'),
                                                     title='Дизайнер интерфейсов',
                                                     description='Факультет Дизайна интерфейсов (UX/UI)',
                                                     thumb_url='https://imagizer.imageshack.com/img922/3497/cs4Eto.jpg',
                                                     reply_markup=gb_school())
         article_11 = types.InlineQueryResultArticle(id=11,
-                                                    input_message_content=types.InputTextMessageContent('geekbrains11'),
+                                                    input_message_content=types.InputTextMessageContent('GeekBrains🧠1️⃣1️⃣'),
                                                     title='1С-Битрикс: Управление сайтом',
                                                     description='Всё необходимое для запуска и ведения бизнеса:CMS',
                                                     thumb_url='https://imagizer.imageshack.com/img923/7259/47VpVE.jpg',
                                                     reply_markup=gb_school())
         article_12 = types.InlineQueryResultArticle(id=12,
-                                                    input_message_content=types.InputTextMessageContent('geekbrains12'),
+                                                    input_message_content=types.InputTextMessageContent('GeekBrains🧠1️⃣2️⃣'),
                                                     title='Школа Программирования. Java 0, 1, 2.',
                                                     description='Написано однажды - работает везде',
                                                     thumb_url='https://imagizer.imageshack.com/img922/1973/CfOxaX.png',
                                                     reply_markup=gb_school())
         article_13 = types.InlineQueryResultArticle(id=13,
-                                                    input_message_content=types.InputTextMessageContent('geekbrains13'),
+                                                    input_message_content=types.InputTextMessageContent('GeekBrains🧠1️⃣3️⃣'),
                                                     title='Базы данных для профессионалов и язык SQL',
                                                     description='Проектирование БД и запросы SQL',
                                                     thumb_url='https://imagizer.imageshack.com/img923/4985/1Rw1BR.png',
                                                     reply_markup=gb_school())
         article_14 = types.InlineQueryResultArticle(id=14,
-                                                    input_message_content=types.InputTextMessageContent('geekbrains14'),
+                                                    input_message_content=types.InputTextMessageContent('GeekBrains🧠1️⃣4️⃣'),
                                                     title='Анатомия блокчейна',
                                                     description='На пике технического прогресса',
                                                     thumb_url='https://imagizer.imageshack.com/img923/7537/Mn107B.jpg',
                                                     reply_markup=gb_school())
         article_15 = types.InlineQueryResultArticle(id=15,
-                                                    input_message_content=types.InputTextMessageContent('geekbrains15'),
+                                                    input_message_content=types.InputTextMessageContent('GeekBrains🧠1️⃣5️⃣'),
                                                     title='Node.js Серверное программирование на JavaScript',
                                                     description='Создавай веб-сервисы с помощью популярного '
                                                                 'фреймворка Express.js',
@@ -811,9 +903,9 @@ def schools(query):
                                                    reply_markup=sb_school())
         article_5 = types.InlineQueryResultArticle(id=5,
                                                    input_message_content=types.InputTextMessageContent('skillbox5'),
-                                                   title='Веб-дизайн с Нуля до Про',
-                                                   description='Вы научитесь создавать дизайн сайтов и приложений',
-                                                   thumb_url='https://imagizer.imageshack.com/img924/5687/7dqETn.jpg',
+                                                   title='Таргетированная реклама Вконтакте',
+                                                   description='Учат всему:от того, как писать статьи и оформлять группу;до основ парсинга и рассылок',
+                                                   thumb_url='https://imagizer.imageshack.com/img923/4493/UDlNK4.jpg',
                                                    reply_markup=sb_school())
         article_6 = types.InlineQueryResultArticle(id=6,
                                                    input_message_content=types.InputTextMessageContent('skillbox6'),
@@ -1002,67 +1094,67 @@ def schools(query):
         bot.answer_inline_query(query.id, results)
     elif query.query == 'netology':
         article_1 = types.InlineQueryResultArticle(id=1,
-                                                   input_message_content=types.InputTextMessageContent('netology1'),
+                                                   input_message_content=types.InputTextMessageContent('Netology🏛0️⃣1️⃣'),
                                                    title='PHP/SQL: back-end разработка и базы данных',
                                                    description='Современные инструменты и лучшие практики для '
                                                                'глубокого понимания процесса backend-разработки ',
                                                    thumb_url='https://imagizer.imageshack.com/img924/8519/rNEsyy.png',
                                                    reply_markup=nt_school())
         article_2 = types.InlineQueryResultArticle(id=2,
-                                                   input_message_content=types.InputTextMessageContent('netology2'),
+                                                   input_message_content=types.InputTextMessageContent('Netology🏛0️⃣2️⃣'),
                                                    title='Веб-дизайн: Эффективный сайт от идеи до реализации',
                                                    description='Пройдите все этапы разработки дизайна продукта с нуля',
                                                    thumb_url='https://imagizer.imageshack.com/img923/4756/FTRedT.jpg',
                                                    reply_markup=nt_school())
         article_3 = types.InlineQueryResultArticle(id=3,
-                                                   input_message_content=types.InputTextMessageContent('netology3'),
+                                                   input_message_content=types.InputTextMessageContent('Netology🏛0️⃣3️⃣'),
                                                    title='Python для работы с данными',
                                                    description="Освойте ключевой инструмент в мире аналитики и "
                                                                "машинного обучения",
                                                    thumb_url='https://imagizer.imageshack.com/img923/7515/w2ceS4.png',
                                                    reply_markup=nt_school())
         article_4 = types.InlineQueryResultArticle(id=4,
-                                                   input_message_content=types.InputTextMessageContent('netology4'),
+                                                   input_message_content=types.InputTextMessageContent('Netology🏛0️⃣4️⃣'),
                                                    title='Аналитик данных',
                                                    description='Научим с нуля собирать, анализировать и презентовать '
                                                                'данные',
                                                    thumb_url='https://imagizer.imageshack.com/img922/9082/J0RDQG.jpg',
                                                    reply_markup=nt_school())
         article_5 = types.InlineQueryResultArticle(id=5,
-                                                   input_message_content=types.InputTextMessageContent('netology5'),
+                                                   input_message_content=types.InputTextMessageContent('Netology🏛0️⃣5️⃣'),
                                                    title='SQL и получение данных',
                                                    description='Научим получать данные для анализа без помощи '
                                                                'разработчиков',
                                                    thumb_url='https://imagizer.imageshack.com/img923/6286/mE6xiK.png',
                                                    reply_markup=nt_school())
         article_6 = types.InlineQueryResultArticle(id=6,
-                                                   input_message_content=types.InputTextMessageContent('netology6'),
+                                                   input_message_content=types.InputTextMessageContent('Netology🏛0️⃣6️⃣'),
                                                    title='Power BI: анализ и визуализация данных без программирования',
                                                    description='инструмент бизнес-анализа, позволяющий анализировать '
                                                                '«живые» данные и создавать визуальные отчёты',
                                                    thumb_url='https://imagizer.imageshack.com/img922/6430/OkjPfV.png',
                                                    reply_markup=nt_school())
         article_7 = types.InlineQueryResultArticle(id=7,
-                                                   input_message_content=types.InputTextMessageContent('netology7'),
+                                                   input_message_content=types.InputTextMessageContent('Netology🏛0️⃣7️⃣'),
                                                    title='BIG DATA с нуля',
                                                    description='Научитесь работать с большими данными,Перейдите на '
                                                                'новый уровень в профессии',
                                                    thumb_url='https://imagizer.imageshack.com/img922/6725/Y8rzwz.jpg',
                                                    reply_markup=nt_school())
         article_8 = types.InlineQueryResultArticle(id=8,
-                                                   input_message_content=types.InputTextMessageContent('netology8'),
+                                                   input_message_content=types.InputTextMessageContent('Netology🏛0️⃣8️⃣'),
                                                    title='Таргетированная реклам',
                                                    description='Курс одобрен компаниями ВКонтакте и myTarget',
                                                    thumb_url='https://imagizer.imageshack.com/img924/8099/kJAshb.jpg',
                                                    reply_markup=nt_school())
         article_9 = types.InlineQueryResultArticle(id=9,
-                                                   input_message_content=types.InputTextMessageContent('netology9'),
+                                                   input_message_content=types.InputTextMessageContent('Netology🏛0️⃣9️⃣'),
                                                    title='Геймдизайн',
                                                    description='Превращайте идеи в успешные игровые проекты',
                                                    thumb_url='https://imagizer.imageshack.com/img923/6162/fTVCcG.jpg',
                                                    reply_markup=nt_school())
         article_10 = types.InlineQueryResultArticle(id=10,
-                                                    input_message_content=types.InputTextMessageContent('netology10'),
+                                                    input_message_content=types.InputTextMessageContent('Netology🏛1️⃣0️⃣'),
                                                     title='Python: программирование на каждый день',
                                                     description='Python — самый простой язык для старта',
                                                     thumb_url='https://imagizer.imageshack.com/img923/7515/w2ceS4.png',
@@ -1076,27 +1168,27 @@ def schools(query):
                                                     thumb_url='https://imagizer.imageshack.com/img923/2681/KyyMhJ.png',
                                                     reply_markup=nt_school())
         article_12 = types.InlineQueryResultArticle(id=12,
-                                                    input_message_content=types.InputTextMessageContent('netology12'),
+                                                    input_message_content=types.InputTextMessageContent('Netology🏛1️⃣2️⃣'),
                                                     title='Анализ статистики сайта с помощью Яндекс.Метрики',
                                                     description='Для отслеживания поведение посетителей на сайте, '
                                                                 'оценки отдачи от рекламных кампаний',
                                                     thumb_url='https://imagizer.imageshack.com/img923/7376/AKFeM9.jpg',
                                                     reply_markup=nt_school())
         article_13 = types.InlineQueryResultArticle(id=13,
-                                                    input_message_content=types.InputTextMessageContent('netology13'),
+                                                    input_message_content=types.InputTextMessageContent('Netology🏛1️⃣3️⃣'),
                                                     title='Математика для анализа данных',
                                                     description='Если специалист не разбирается в этих направлениях — гипотезы и выводы будут неточными',
                                                     thumb_url='https://imagizer.imageshack.com/img924/6558/aWldIr.png',
                                                     reply_markup=nt_school())
         article_14 = types.InlineQueryResultArticle(id=14,
-                                                    input_message_content=types.InputTextMessageContent('netology14'),
+                                                    input_message_content=types.InputTextMessageContent('Netology🏛1️⃣4️⃣'),
                                                     title='Основы поисковой оптимизации (SEO)',
                                                     description='Как использовать факторы ранжирования и работать с '
                                                                 'разными типами пользовательских запросов',
                                                     thumb_url='https://imagizer.imageshack.com/img923/8043/IcXiRk.png',
                                                     reply_markup=nt_school())
         article_15 = types.InlineQueryResultArticle(id=15,
-                                                    input_message_content=types.InputTextMessageContent('netology15'),
+                                                    input_message_content=types.InputTextMessageContent('Netology🏛1️⃣5️⃣'),
                                                     title='Исследуйте в R',
                                                     description='Прокачайтесь до уровня middle в прогнозировании и '
                                                                 'визуализации в R-Studio',
@@ -1364,6 +1456,7 @@ def callbacks(call):
     except:
         pass
     if 'success' in call.data:
+        print(call.data)
         chat_id = ''.join([i for i in call.data[-13:] if i.isdigit()])
         bot.send_message(909435473,
                          text='Заказ под номером  ' + chat_id + ' подтвержден от @' + query_with_fetchone('user',
@@ -1593,13 +1686,11 @@ def essential(message):
     update_flag_new_com(0, message.from_user.id)
     update_flag_comments(0, message.from_user.id)
     update_payment_course(message.text, message.from_user.id)
-    school = ''.join([i for i in message.text if not i.isdigit()])
+    school = ''.join([i for i in message.text if i.isalpha()])
     url = 'https://www.geeksforgeeks.org/python-ways-to-remove-numeric-digits-from-given-string/'
-    print(query_with_fetchone('previous_message_id', message.from_user.id))
     try:
         i = 0
         while query_with_fetchone('previous_message_id', message.from_user.id) + i < message.message_id:
-            print(query_with_fetchone('previous_message_id', message.from_user.id))
             bot.delete_message(message.from_user.id,
                                query_with_fetchone('previous_message_id', message.from_user.id) + i)
             i += 1
@@ -1610,121 +1701,121 @@ def essential(message):
         bot.send_photo(message.from_user.id,
                        photo='AgACAgIAAxkBAAIORV8dRTR-QS2LbL9pvCXhBcZ_mdKdAAInrzEbWwPwSJzKGpKODmu4jWkYlS4AAwEAAwIAA20AAzMAAQIAARoE',
                        caption='Dai deneg', reply_markup=all_courses())
-    elif message.text == 'geekbrains1':
+    elif message.text == 'GeekBrains🧠0️⃣1️⃣':
         text = '<strong>[GeekBrains] Профессия Разработчик игр</strong>\n \n<strong>Описание:</strong>\nЭта профессия позволяет исполнить мечту увлеченного геймера: сделать игру, в которой не будет недостатков. Разработчик игр создает концепцию и прототип игры, выбирает средства для реализации проекта.\n \n<strong>Вы научитесь:</strong>\n🎮Git\n🎮Основы C#\n🎮Unity и C#\n🎮Архитектура и шаблоны проектирования\n \n🤢Цена курса: ̶7̶2̶ ̶0̶0̶0̶₽ ̶/̶ ̶4̶2̶1̶ ̶9̶0̶0̶₸̶\n🤑Наша цена: 390₽ / 1990₸ \n'
         url = 'https://geekbrains.ru/professions/game_developer'
         photo = geekbrains_courses[0]
-    elif message.text == 'geekbrains2':
+    elif message.text == 'GeekBrains🧠0️⃣2️⃣':
         text = '<strong>[GeekBrains] Профессия Программист Android</strong>\n \n<strong>Описание:</strong>\nРазработка под Android — это создание игр и полезных приложений под 80% мобильных устройств. Android — открытая и свободная система, настроенная к модернизации и адаптации, она позволяет реализовать самые смелые фантазии программиста.\n \n<strong>Вы научитесь:</strong>\n🤖Git. Базовый курс\n🤖Java Core. \n🤖Android. \n🤖Android. Популярные библиотеки.\n🤖Базы данных.\n \n🤢Цена курса:  ̶8̶4̶ ̶0̶0̶0̶₽ ̶/̶ ̶4̶9̶2̶ ̶2̶0̶0̶₸̶\n🤑Наша цена: 390₽ / 1990₸ \n'
         url = 'https://geekbrains.ru/professions/android_developer'
         photo = geekbrains_courses[1]
-    elif message.text == 'geekbrain7':
+    elif message.text == 'GeekBrains🧠0️⃣7️⃣':
         text = '<strong>[GeekBrains] Создание сайтов и приложений. Методы повышения конверсии</strong>\n \n<strong>Описание:</strong>\nЭтот курс даст вам доступ к мощным маркетинговым инструментам. Вы узнаете, что действительно важно, а что необязательно, а порой даже вредно. \nАкцент сделан на начинающих специалистов, поэтому информация представлена максимально просто.\n \n<strong>Вы научитесь:</strong>\n🌊Создавать действительно продающие структуры сайтов;\n🌊Повышать эффективность сайта в несколько раз;\n🌊Обыгрывать конкурентов в интернет маркетинге благодаря анализу;\n🌊Подготавливать проект для создания мобильной версии продукта;\n🌊Проводить качественный аудит сайта;\n \n🤢Цена курса:  ̶1̶1̶ ̶3̶7̶0̶₽ ̶/̶ ̶6̶6̶ ̶6̶0̶0̶₸̶\n🤑Наша цена: 390₽ / 1990₸ \n'
         url = 'https://geekbrains.ru/courses/100'
         photo = geekbrains_courses[6]
-    elif message.text == 'geekbrains3':
+    elif message.text == 'GeekBrains🧠0️⃣3️⃣':
         text = '<strong>[GeekBrains] Профессия Frontend-разработчик</strong>\n \n<strong>Описание:</strong>\nFrontend-разработчик создаёт интерфейсы, с которыми будут взаимодействовать пользователи, верстает сайты по современным стандартам, виртуозно владеет JavaScript, HTML, CSS.\n \n<strong>Вы научитесь:</strong>\n🧨Основы HTML/CSS и PHP.\n🧨HTML/CSS.\n🧨JavaScript.\n🧨Основы баз данных.\n🧨ReactJS.\n \n🤢Цена курса: ̶1̶̶̶8̶̶̶ ̶̶̶9̶̶̶0̶̶̶0̶̶̶₽ ̶/̶̶̶ ̶1̶̶̶1̶̶̶3̶̶̶4̶̶̶0̶̶̶0̶̶̶₸̶\n🤑Наша цена: 390₽ / 1990₸\n'
         url = 'https://geekbrains.ru/professions/frontend_developer'
         photo = geekbrains_courses[2]
-    elif message.text == 'geekbrains5':
+    elif message.text == 'GeekBrains🧠0️⃣5️⃣':
         text = '<strong>[GeekBrains] Профессия Веб-разработчик</strong>\n \n<strong>Описание:</strong>\nВеб-разработчики создают и обслуживают сайты, порталы. Они верстают пользовательские интерфейсы веб-ресурсов, проектируют серверную часть, которая обеспечивает работу всех функций и хранение данных.\n \n<strong>Вы научитесь:</strong>\n✨HTML/CSS.\n✨Основы работы с Git\n✨HTML5 и CSS3.\n✨JavaScript.\n✨Проектирование БД и запросы SQL\n✨PHP. \n✨Laravel. Глубокое погружение\n \n🤢Цена курса:  ̶9̶6̶ ̶0̶0̶0̶₽ ̶/̶ ̶5̶6̶2̶ ̶5̶0̶0̶₸̶\n🤑Наша цена: 390₽ / 1990₸  \n'
         url = 'http://geekbrains.ru/professions/web_developer'
         photo = geekbrains_courses[4]
-    elif message.text == 'geekbrains8':
+    elif message.text == 'GeekBrains🧠0️⃣8️⃣':
         text = '<strong>[GeekBrains] Факультет Python-разработки</strong>\n \n<strong>Описание:</strong>\nСтаньте программистом Python и изучите один из самых востребованных навыков современной разработки!\n \n<strong>Вы научитесь:</strong>\n🔥Backend-разработка\n🔥Frontend и Backend интернет-магазина\n🔥Сетевой чат\n🔥Архитектура и шаблоны проектирования на Python\n🔥Компьютерные сети\n🔥Продвинутый курс Javascript\n \n🤢Цена курса: 1̶8̶0̶ ̶0̶0̶0̶₽ ̶/̶ ̶1̶ ̶0̶5̶4̶ ̶8̶0̶0̶₸\n🤑Наша цена: 390₽ / 1990₸ \n'
         url = 'https://geekbrains.ru/geek_university/python'
         photo = geekbrains_courses[7]
-    elif message.text == 'geekbrains9':
+    elif message.text == 'GeekBrains🧠0️⃣9️⃣':
         text = '<strong>[GeekBrains] Системный администратор </strong>\n \n<strong>Описание:</strong>\nСистемный администратор обеспечивает бесперебойное функционирование компьютерной техники и программного обеспечения в организации. Он занимается поддержкой серверов, проектирует и администрирует локальную сеть, выдаёт пользователям доступ к сайтам.\n \n<strong>Вы научитесь:</strong>\n🛡Проектирование БД и запросы SQL\n🛡Классика computer science\n🛡Практика администрирования ОС Linux на компьютере\n🛡Операционные системы\n🛡Безопасность компьютерных сетей\n🛡Основные сервисы на Linux для предприятия\n \n🤢Цена курса:  ̶7̶0̶ ̶0̶0̶0̶₽ ̶/̶ ̶4̶1̶0̶ ̶2̶0̶0̶₸̶\n🤑Наша цена: 390₽ / 1990₸ \n'
         url = 'https://geekbrains.ru/professions/sys_admin'
         photo = geekbrains_courses[8]
-    elif message.text == 'geekbrains10':
+    elif message.text == 'GeekBrains🧠1️⃣0️⃣':
         text = '<strong>[GeekBrains] Дизайнер интерфейсов </strong>\n \n<strong>Описание:</strong>\nДизайнер UX/UI проектирует взаимодействие пользователя с сайтом, приложением или сервисом и создает визуальные элементы, систему и прототип интуитивно понятного интерфейса.\n \n<strong>Вы научитесь:</strong>\n✨Основы Adobe Illustrator\n✨Figma\n✨Базовые знания. Дизайн\n✨Адаптивный дизайн\n✨Adobe After Effects\n \n🤢Цена курса:   ̶8̶5̶ ̶5̶0̶0̶ ̶₽̶ ̶/̶ ̶4̶9̶3̶ ̶8̶0̶0̶ ̶₸̶\n🤑Наша цена: 390₽ / 1990₸\n'
         url = 'https://geekbrains.ru/geek_university/interface-design'
         photo = geekbrains_courses[9]
-    elif message.text == 'geekbrains11':
+    elif message.text == 'GeekBrains🧠1️⃣1️⃣':
         text = '<strong>[GeekBrains] 1С-Битрикс: Управление сайтом</strong>\n \n<strong>Описание:</strong>\nКурс предназначен для тех разработчиков, кто собирается работать с CMS 1C-Битрикс и хочет узнать подробнее о ее функционале и настройках.\n \n<strong>Вы научитесь:</strong>\n💣Выбирать правильные редакции и решения для своего веб-проекта на CMS Битрикс;\n💣Устанавливать и запускать сайт на CMS Битрикс.\n💣Проектировать бизнес-логику своих веб-приложений, создавать структуру и навигацию.\n💣Интегрировать HTML-верстку в проект.\n💣Работать с компонентами CMS Битрикс и расширять их базовые возможности.\n💣Настраивать информационные блоки и выводить динамическую информацию на сайте.\n \n🤢Цена курса: ̶9̶ ̶9̶0̶0̶₽ ̶/̶ ̶5̶8̶ ̶0̶0̶0̶₸̶\n🤑Наша цена:  390₽ / 1990₸\n'
         url = 'http://geekbrains.ru/courses/26'
         photo = geekbrains_courses[10]
-    elif message.text == 'geekbrains6':
+    elif message.text == 'GeekBrains🧠0️⃣6️⃣':
         text = '<strong>[GeekBrains] </strong><strong>Yii2 </strong><strong>Профессиональная Backend-разработка</strong>\n \n<strong>Описание:</strong>\nYii2 framework - oдин из самых популярных и востребованных фреймворков на PHP. Знание любого фреймворка качественно увеличивает востребованность php-программиста на рынке труда, и его оклад.\n \n<strong>Вы научитесь:</strong>\n🌊Настраивать веб-сервер и разворачивать приложение;\n🌊Проектировать БД и работать с моделями и формами Yii;\n🌊Работать с генератором кода;\n🌊Управлять кэшированием;\n🌊Использовать расширения и особенности фреймворка;\n \n🤢Цена курса: 1̶5̶ ̶0̶0̶0̶₽ ̶/̶ ̶8̶7̶ ̶9̶0̶0̶₸̶\n🤑Наша цена: 390₽ / 1990₸ \n'
         url = 'https://geekbrains.ru/courses/35'
         photo = geekbrains_courses[5]
-    elif message.text == 'geekbrains12':
+    elif message.text == 'GeekBrains🧠1️⃣2️⃣':
         text = '<strong>[GeekBrains] Школа Программирования. Java 0, 1, 2.</strong>\n \n<strong>Описание:</strong>\nНа Java пишут игры, мобильные и десктопные приложения, enterprise-проекты, серверные проекты в сфере финансовых услуг, инструменты для обработки Big Data.\nИз-за широкой сферы применения и кроссплатформенности языка программирования Java-разработчики крайне востребованы в IT-компаниях.\n \n<strong>Вы научитесь:</strong>\n🔥Java SE 8 и выше\n🔥Основы работы с Git\n🔥Проектирование БД и запросы SQL\n🔥Алгоритмы Java. \n🔥HTML/CSS.\n🔥Создание веб-приложений на Java\n \n🤢Цена курса:   ̶6̶6̶ ̶0̶0̶0̶₽ ̶/̶ ̶3̶8̶6̶ ̶7̶0̶0̶₸̶\n🤑Наша цена: 390₽ / 1990₸ \n'
         url = 'https://geekbrains.ru/professions/java_developer'
         photo = geekbrains_courses[11]
-    elif message.text == 'geekbrains13':
+    elif message.text == 'GeekBrains🧠1️⃣3️⃣':
         text = '<strong>[GeekBrains] Базы данных для профессионалов и язык SQL</strong>\n \n<strong>Описание:</strong>\nНи одно современное веб-приложение, и не только веб, не обходится без долговременного хранилища данных. И для многих приложений таким решением становится MySQL. Зарекомендовавшая себя на многих популярных и больших проектах, эта СУБД развивается и является одним из основных решений для организации баз данных.\n \n<strong>Вы научитесь:</strong>\n💾Проектировать БД для наиболее эффективного их построения\n💾Создавать БД по созданным проектам\n💾Строить простые и сложные запросы на выборки данных\n💾Анализировать производительность запросов и оптимизировать их\n💾Писать транзакции\n💾Администрировать БД\n \n🤢Цена курса:   ̶1̶5̶ ̶0̶0̶0̶₽ ̶/̶ ̶8̶7̶ ̶9̶0̶0̶₸\n🤑Наша цена: 390₽ / 1990₸ \n'
         url = 'https://geekbrains.ru/courses/1181'
         photo = geekbrains_courses[12]
-    elif message.text == 'geekbrains14':
+    elif message.text == 'GeekBrains🧠1️⃣4️⃣':
         text = '<strong>[GeekBrains] Анатомия блокчейна</strong>\n \n<strong>Описание:</strong>\nРазбираться в криптовалютах. Вы поймете, в чем их смысл, сможете читать официальную документацию проекта (whitepaper), оценивать идеи, понимать описания криптопротоколов.\nПонимать, как построены сервисы, обеспечивающие безопасность коммуникаций между участниками. Вы сможете оценить техническое выполнение проекта и оригинальность замысла.\n \n<strong>Вы научитесь:</strong>\n💸Введение в криптографию\n💸Блокчейн\n💸Практическая работа с криптовалютой, кошельками и биржами.\n💸Использование блокчейн для проведения ICO.\n \n🤢Цена курса:   ̶2̶0̶ ̶0̶0̶0̶₽̶ ̶/̶ ̶1̶1̶7̶ ̶2̶0̶0̶₸̶\n🤑Наша цена: 390₽ / 1990₸\n'
         url = 'https://geekbrains.ru/blockchain'
         photo = geekbrains_courses[13]
-    elif message.text == 'geekbrains4':
+    elif message.text == 'GeekBrains🧠0️⃣4️⃣':
         text = '<strong>[GeekBrains] Курс по Agile-методологиям</strong>\n \n<strong>Описание:</strong>\nКогда дедлайны горят, заказчик дает новые вводные, а в продуктах встречаются ошибки, используйте Agile-метод. С помощью гибкого подхода вы будете отслеживать развитие проекта на всех этапах, оценивать риски и расставлять приоритеты.\n \n<strong>Вы научитесь:</strong>\n🌟Примените полученные знания для практической работы Agile-команде\n🌟Научитесь оценивать задачи и свои возможности\n🌟Научитесь оптимизировать рабочие процессы и и нагрузку\n \n🤢Цена курса:   ̶9̶ ̶9̶0̶0̶₽̶ ̶/̶ ̶5̶8̶ ̶0̶0̶0̶₸̶\n🤑Наша цена: 390₽ / 1990₸ \n'
         url = 'https://intensives.geekbrains.ru/agile'
         photo = geekbrains_courses[3]
-    elif message.text == 'geekbrains15':
+    elif message.text == 'GeekBrains🧠1️⃣5️⃣':
         text = '<strong> [GeekBrains] Node.js Серверное программирование на JavaScript</strong>\n \n<strong>Описание:</strong>\nЭволюция JavaScript с каждым годом дает возможность для веб-разработчиков создавать большое количество новых технологий и инновационных приложений. Один из наиболее интересных и популярных инструментов для создания легко масштабируемых сетевых приложений является Node.js – это серверная реализация языка программирования JavaScript, основанная на движке V8.\n \n<strong>Вы научитесь:</strong>\n☁️Создавать консольные утилиты на Node.js;\n☁️Создавать веб-сервисы с помощью популярного фреймворка Express.js;\n☁️Применять шаблонизаторы для разделения кода и оформления интерфейса в проекте;\n☁️Создавать и использовать различные REST API;\n☁️Использовать в программе веб-сокеты с помощью socket.io\n \n🤢Цена курса:    ̶1̶5̶ ̶0̶0̶0̶₽̶ ̶/̶ ̶8̶6̶ ̶7̶0̶0̶₸̶\n🤑Наша цена: 390₽ / 1990₸ \n'
         url = 'https://geekbrains.ru/courses/11'
         photo = geekbrains_courses[14]
-    elif message.text == 'netology1':
+    elif message.text == 'Netology🏛0️⃣1️⃣':
         text = '<b> [Нетология] PHP/SQL: back-end разработка и базы данных\n\nОписание:</b> \nПод PHP работает 80% сайтов, в том числе Facebook, «ВКонтакте» и «Википедия». В преподавательском составе "Нетологии" состоят только опытные и бывалые разработчики, которые проведут вас в мир программирования и сделают востребованным специалистом!\n<b>Вы научитесь:</b>\n🔥работать со строками, массивами и объектами;\n🔥устанавливать и настраивать веб-сервера;\n🔥создавать классы и объекты в ООП;\n🔥управлять таблицами и базами данных в MySQL.\n🤢Цена курса: 1̶̶̶8̶̶̶ ̶̶̶9̶̶̶0̶̶̶0̶̶̶ ₽̶/̶̶̶ ̶1̶̶̶1̶̶̶3̶̶̶4̶̶̶0̶̶̶0̶̶̶ ̶₸̶̶̶\n🤑Наша цена: 390 ₽ / 1990 ₸'
         url = 'https://it-events.com/events/6470'
         photo = netology_courses[0]
-    elif message.text == 'netology2':
+    elif message.text == 'Netology🏛0️⃣2️⃣':
         text = '<b>[Нетология]Веб-дизайн: Эффективный сайт от идеи до реализации\n\nОписание:</b>\n Пользователи курса «Веб дизайн. Обучение с нуля» узнают о таких понятиях и инструментах интернет-разработки, как:\n🌟разработка дизайн-макета;\n🌟тестирование и взаимодействие с пользователями;\n🌟векторные и растровые изображения;\n🌟основы работы с цветом;\n🌟веб-типографика;\n🌟подготовка портфолио;\n🌟презентация проекта клиенту.\n\n🤢Цена курса:  ̶3̶4̶ ̶0̶0̶0̶ ₽ ̶/̶̶̶ ̶2̶0̶2̶ ̶0̶0̶0̶ ₸̶̶̶\n🤑Наша цена: 390 ₽ / 1990 ₸'
         url = 'https://netology.ru/programs/web-design'
         photo = netology_courses[1]
-    elif message.text == 'netology3':
+    elif message.text == 'Netology🏛0️⃣3️⃣':
         text = '<b>[Нетология] Python для работы с данными\n\nОписание:</b>\nPython — простой и универсальный инструмент для решения любых аналитических задач.\n👨‍💻Автоматизируйте свою рутинную работу с помощью Python\n🦾Обрабатывайте большие объемы информации без администрирования и баз данных\n🤖Освойте ключевой инструмент в мире аналитики и машинного обучения\n<b>Ключевые навыки</b>\n⚡️Работа с сырыми данными и их подготовка для анализа\n⚡️Работа с аналитическими библиотеками numpy, scipy и pandas\n⚡️Визуализация данных с помощью библиотек seaborn, plotly, matplotlib\n⚡️Статистический анализ данных\n⚡️Применение математических моделей\n⚡️Выбор и создание фич\n\n🤢Цена курса:  ̶4̶5̶ ̶0̶0̶0̶ ̶₽ ̶/̶ ̶2̶7̶0̶ ̶0̶0̶0̶ ̶₸̶\n🤑Наша цена: 390 ₽ / 1990 ₸ '
         photo = netology_courses[2]
-    elif message.text == 'netology4':
+    elif message.text == 'Netology🏛0️⃣4️⃣':
         text = '<b>[Нетология] Профессия Аналитик данных\n\nОписание:</b>\nНаучим с нуля собирать, анализировать и презентовать данные.Получите востребованную профессию с зарплатой от 400 000 ₸. (по данным hh.kz)\n<b>Ключевые навыки:</b>\n🌟Сбор и подготовка данных для анализа\n🌟Визуализация данных\n🌟Сбор и понимание бизнес-требований заказчика\n🌟Подготовка ad-hoc исследований и аналитики\n🌟Тестирование гипотез\n🌟Умение писать сложные запросы на SQL\n🌟Python для анализа данных\n🌟Знание основ работы с Hadoop\n\n🤢Цена курса:  ̶1̶0̶0̶ ̶0̶0̶0̶ ̶₽ ̶/̶ ̶5̶8̶5̶ ̶5̶0̶0̶ ̶₸\n🤑Наша цена: 390 ₽ / 1990 ₸ '
         photo = netology_courses[3]
-    elif message.text == 'netology5':
+    elif message.text == 'Netology🏛0️⃣5️⃣':
         text = ' <strong>[Нетология] SQL и получение данных</strong>\n\n<strong>Описание: </strong>\n<strong>Программа обучения SQL</strong> — первый шаг в профессиональном росте дата саентистов и аналитиков данных в сильных командах и проектах. Без владения SQL невозможно будет вырасти выше уровня junior.\n \n<strong>Возможности после обучения:</strong>\n🌊Овладеете языком запросов SQL\nПознакомитесь с разнообразным окружением БД: git, виртуальные машины, linux\n🌊Углубите знания SQL\nПерейдёте от исполнения запросов к написанию функций\n🌊Найдёте общий язык с разработчиками\nУлучшите понимание процессов инжиниринга данных\n \n🤢Цена курса:  ̶2̶3̶ ̶9̶0̶0̶ ̶₽ ̶/̶ ̶1̶4̶3̶ ̶4̶0̶0̶ ̶₸̶\n🤑Наша цена: 390 ₽ / 1990 ₸ \n'
         url = 'https://netology.ru/programs/sql-lessons#/'
         photo = netology_courses[4]
-    elif message.text == 'netology6':
+    elif message.text == 'Netology🏛0️⃣6️⃣':
         text = '<strong>[Нетология] Power BI: анализ и визуализация данных без программирования</strong>\n \n<strong>Описание:</strong>\nBI-платформы — инструмент бизнес-анализа, позволяющий анализировать «живые» данные и создавать визуальные отчёты без привлечения ИТ-специалистов\n \n<strong>Ключевые навыки:</strong>\n🔥Подготовка исходных данных для анализа\n🔥Построение моделей данных из разных неструктурированных источников: таблиц, сайтов и баз данных\n🔥Преобразование сложных данных в простые для восприятия и ценные для бизнеса сведения\n🔥Подготовка интерактивных отчётов и дашбордов для совместной работы\n🔥Написание кастомных формул на языке запросов DAX\n🔥Визуализация результатов анализа\n🔥Анализ динамики изменений на дашбордах\n \n🤢Цена курса:  ̶2̶8̶ ̶0̶0̶0̶ ̶₽ ̶/̶ ̶1̶6̶8̶ ̶0̶0̶0̶ ̶₸̶\n🤑Наша цена: 390 ₽ / 1990 ₸ \n'
         url = 'https://netology.ru/programs/power-bi#/'
         photo = netology_courses[5]
-    elif message.text == 'netology7':
+    elif message.text == 'Netology🏛0️⃣7️⃣':
         text = '<strong>[Нетология] BIG DATA с нуля</strong>\n\n<strong>Описание:</strong>\n Big data - инструменты, подходы и методы обработки огромных объёмов данных.;\n<strong>Вы получите:</strong>\n🔥Сбор и подготовка данных для анализа\n🔥Понимание бизнес-требований заказчика и организация эффективной команды\n🔥Преобразование неструктурированных данных в простые для восприятия и ценные для бизнеса сведения\n🔥Построение моделей данных из разных неструктурированных источников: таблиц, сайтов и баз данных\n🔥Определение и выбор оптимальной архитектуры для Big Data проекта\n🔥Определение результатов обработки и инсайтов в данных и улучшение качества принятия решений на их основе\n\n🤢Цена курса: ̶3̶2̶ ̶9̶0̶0̶ ̶₽ ̶/̶ ̶1̶9̶7̶ ̶0̶0̶0̶ ̶₸̶\n🤑Наша цена: 390 ₽ / 1990 ₸\n'
         url = 'https://netology.ru/programs/big-data#/presentation'
         photo = netology_courses[6]
-    elif message.text == 'netology8':
+    elif message.text == 'Netology🏛0️⃣8️⃣':
         text = ' <strong>[Нетология] Таргетированная реклама</strong>\n\n<strong>Описание:</strong>\nНаучим работать с рекламой в социальных сетях. Курс одобрен компаниями ВКонтакте и myTarget.\n<strong>Ключевые навыки:</strong>\n🌟Анализ и сегментация целевой аудитории\n🌟Разработка стратегии таргетированной рекламы\n🌟Настройка рекламных кампаний в кабинетах Facebook/Instagram, ВКонтакте, myTarget\n🌟Создание креативов и текстов для рекламных кампаний\n🌟Работа с системами аналитики: Google Analytics, Яндекс.Метрика\n🌟Работа с парсерами, пикселями ремаркетинга/ретаргетинга\n🌟Анализ и оптимизация рекламных кампаний\n🌟Планирование бюджета рекламных кампаний\n🌟Поиск клиентов и отчётность\n \n🤢Цена курса:  ̶4̶9̶ ̶9̶0̶0̶ ̶₽ ̶/̶ ̶2̶9̶9̶ ̶0̶0̶0̶ ̶₸̶\n🤑Наша цена: 390 ₽ / 1990 ₸ \n'
         url = 'https://netology.ru/programs/target-smm#/'
         photo = netology_courses[7]
-    elif message.text == 'netology9':
+    elif message.text == 'Netology🏛0️⃣9️⃣':
         text = ' <strong>[Нетология] Геймдизайн</strong>\n<strong>Описание:</strong>\n\nГеймдизайнер знает, как с нуля создать игровой продукт. Он умеет грамотно формулировать задачи для команды, понимает маркетинг игр и способен убедить инвестора в успешности проекта. Освойте новую профессию — и создавайте по-настоящему успешные, захватывающие игры.\n\n<strong>Чему вы научитесь на курсе:</strong>\n🎮Создавать сюжет и композицию игры, строить дизайн игрового пространства, карты уровней и карты маршрутов\n🎮Прототипировать игры и создавать шаблоны игровых интерфейсов для UI-дизайнеров\n🎮Собирать и анализировать игровую статистику, а также участвовать в разработке стратегии продвижения игры\n\n🤢Цена курса:  ̶4̶5̶ ̶9̶0̶0̶ ̶₽ ̶/̶ ̶2̶7̶5̶ ̶4̶0̶0̶ ̶₸̶ ̶\n🤑Наша цена: 390 ₽ / 1990 ₸ '
         url = 'https://netology.ru/programs/gamedesign#/'
         photo = netology_courses[8]
-    elif message.text == 'netology10':
+    elif message.text == 'Netology🏛1️⃣0️⃣':
         text = '<strong>[Нетология] Python: программирование на каждый день</strong>\n\n<strong>Описание:</strong>\nPython входит в топ-10 самых востребованных языков программирования (по данным Stack Overflow). Он открывает путь в топовые IT-компании: Google, Pixar, Youtube, Instagram, Nasa, Intel, Pinterest используют именно его.\n \n<strong>Программа курса:</strong>\n👨‍💻Вычислительные задачи на Python\n👨‍💻Работа с файловой системой\n👨‍💻Работа с внешним API\n👨‍💻Краткое введение в анализ данных\n👨‍💻Подводные камни разработки на Python\n \n🤢Цена курса:  ̶7̶9̶ ̶9̶9̶0̶ ̶₽ ̶/̶ ̶4̶7̶9̶ ̶9̶4̶0̶ ̶₸̶ ̶\n🤑Наша цена: 390 ₽ / 1990 ₸ \n'
         url = 'https://netology.ru/programs/python#/'
         photo = netology_courses[9]
-    elif message.text == 'netology11':
+    elif message.text == 'Netology🏛1️⃣1️⃣':
         text = '<strong>[Нетология] Веб-аналитика: что нужно знать интернет-специалисту</strong>\n\n<strong>Описание:</strong>\nНаучитесь управлять маркетингом при помощи данных и использовать их для роста бизнеса и увеличения прибыли\n \n<strong>Ключевые навыки</strong>\n🌊Настройка отслеживания в аккаунтах Google Analytics и Яндекс. Метрики\n🌊Использование Google Tag Manager для разметки сайта\n🌊Создание отчётов, сводок и оповещений в Google Analytics и Яндекс. Метрике\n🌊Анализ эффективности сайта, продаж на сайте и источников трафика\n🌊Проведение А/В тестов для повышения конверсии сайта\n🌊Использование Excel\n🌊Использование Google Data Studio для визуализации данных\n \n🤢Цена курса:  ̶3̶9̶ ̶9̶0̶0̶ ̶₽ ̶/̶ ̶2̶3̶9̶ ̶4̶0̶0̶ ̶₸̶ ̶\n🤑Наша цена: 390 ₽ / 1990 ₸ \n'
         url = 'http://netology.ru/programs/ws-web-analytics'
         photo = netology_courses[10]
-    elif message.text == 'netology12':
+    elif message.text == 'Netology🏛1️⃣2️⃣':
         text = '<strong>[Нетология] Анализ статистики сайта с помощью Яндекс.Метрики</strong>\n\n<strong>Описание:</strong>\nКурс по Яндекс Метрике создан для тех, кто хочет отслеживать поведение посетителей на сайте, оценивать отдачу от рекламных кампаний, а также наблюдать в реальном времени за изменением KPI вашего интернет-проекта.\n \n<strong>Содержание курса:</strong>\n💥Принципы работы Яндекс.Метрики\n💥Краткий обзор отчетов Яндекс.Метрики\n💥Создание аккаунта Яндекс.Метрики\n💥Дополнительные настройки счетчика\n💥Настройка целей Яндекс.Метрики\n💥Приемы работы с отчетами Яндекс Метрики\n \n🤢Цена курса:  ̶3̶9̶ ̶9̶0̶0̶ ̶₽ ̶/̶ ̶2̶3̶9̶ ̶4̶0̶0̶ ̶₸̶ ̶\n🤑Наша цена: 390 ₽ / 1990 ₸ \n'
         url = 'https://metrika.yandex.ru/welcome?utm_medium=search&utm_source=google&utm_campaign=8146429199&utm_content=397582312057&utm_term=%2B%D1%8F%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%20%2B%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D0%BA%D0%B0&gclid=Cj0KCQjw0rr4BRCtARIsAB0_48NI8Uk7BgxMRex52HNUvuCAF6cCE7HFz8BrRe3hTEqpVo9u28YH5E8aAmNWEALw_wcB'
         photo = netology_courses[11]
-    elif message.text == 'netology13':
+    elif message.text == 'Netology🏛1️⃣3️⃣':
         text = ' <strong>[Нетология] Математика для анализа данных</strong>\n \n<strong>Описание:</strong>\nЧтобы увидеть в больших объёмах данных закономерности, аналитик опирается на линейную алгебру, математический анализ и теорию вероятности. Если специалист не разбирается в этих направлениях — гипотезы и выводы будут неточными. Это как запустить ракету в космос, не зная траекторию полёта.\n \n<strong>Кому подойдёт курс:</strong>\n🤓Аналитикам данных\nПознакомитесь с основными математическими концепциями и заложите теоретический фундамент, чтобы лучше разбираться в статистике и правильно интерпретировать данные.\n🤓Специалистам по Data Science\nНачнёте глубже разбираться в алгоритмах машинного обучения. Поймёте, какие принципы лежат в основе разных алгоритмов, чтобы выбирать правильные инструменты.\n \n🤢Цена курса:  ̶1̶7̶ ̶̶̶0̶0̶0̶ ̶₽ ̶̶̶/̶̶̶ ̶̶̶9̶9̶ ̶0̶0̶0̶ ̶̶̶₸̶̶̶ ̶\n🤑Наша цена: 390 ₽ / 1990 ₸ \n'
         url = 'https://netology.ru/programs/mathematics-for-data-science'
         photo = netology_courses[12]
-    elif message.text == 'netology14':
+    elif message.text == 'Netology🏛1️⃣4️⃣':
         text = '<strong>[Нетология] Основы поисковой оптимизации (SEO)</strong>\n \n<strong>Описание:</strong> \nКурс по основам поисковой оптимизации (SEO) — источник и теоретических, и практических знаний. Вы освоите принципы работы поисковых систем, поймете, как использовать факторы ранжирования и работать с разными типами пользовательских запросов.\n \n<strong>Ключевые навыки:</strong>\n💫Знание основных факторов ранжирования в поисковых системах и умение эти знания применять на практике\n💫Умение на базовом уровне визуально разбираться в коде и находить ошибки, допущенные при html-верстке документов\n💫Формирование семантического ядра вручную и с помощью софта и распределение запросов по страницам\n💫Умение находить технические ошибки на сайте\n💫Проведение работ по контентной оптимизации\n \n🤢Цена курса:  ̶7̶9̶0̶ ̶₽ ̶̶̶/̶̶̶ ̶̶̶4̶5̶0̶0̶ ̶₸̶̶̶\n🤑Наша цена: 390 ₽ / 1990 ₸\n'
         url = 'https://netology.ru/courses/osnovy-poiskovoy-optimizatsii-seo'
         photo = netology_courses[13]
-    elif message.text == 'netology15':
+    elif message.text == 'Netology🏛1️⃣5️⃣':
         text = '<strong>[Нетология] Исследуйте в R (2020)</strong>\n\n<strong>Описание:</strong>\nМы живём в эпоху цифровизации, когда каждый процесс можно автоматизировать и упростить свою работу. На языке R можно написать код, который освободит вам время для новых проектов.\n \n<strong>Возможности после обучения:</strong>\n🦾Собирать данные из большинства аналитических систем\n🦾Преобразовывать R-скрипты для переработки получаемых данных в зависимости от задач\n🦾Анализировать рутинные процессы с помощью скриптов и показывать результаты на графиках\n \n🤢Цена курса:  ̶2̶7̶ ̶0̶0̶0̶ ̶̶̶̶̶̶̶₽ ̶/̶̶̶̶̶̶̶ ̶̶̶̶̶̶̶1̶6̶2̶ ̶0̶0̶0̶ ̶̶̶₸̶̶̶̶̶̶̶\n🤑Наша цена: 390 ₽ / 1990 ₸\n'
         url = 'https://netology.ru/programs/r-analysis#/presentation'
         photo = netology_courses[14]
@@ -1745,8 +1836,8 @@ def essential(message):
         url = 'https://skillbox.ru/aic/'
         photo = skillbox_courses[2]
     elif message.text == 'skillbox5':
-        text = ' <strong>[SkillBox] Веб-дизайн с Нуля до Про </strong>\n \n<strong>Описание:</strong>\nВы научитесь создавать дизайн сайтов и приложений, работать с реальными заказчиками и презентовать свои проекты. \n \n<strong>Вы научитесь:</strong>\n✨Создавать интерфейсы\n✨Делать адаптивные макеты\n✨Работать с типографикой\n✨Делать анимации и иконки\n✨Проектировать пользовательский опыт\n✨Работать с клиентами\n \n🤢Цена курса:  ̶1̶0̶0̶ ̶0̶0̶0̶₽̶̶̶ ̶̶̶̶̶̶̶ ̶̶̶/̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶ ̶̶̶̶̶̶̶5̶7̶8̶ ̶0̶0̶0̶₸̶̶̶ ̶̶̶̶̶̶̶\n🤑Наша цена: 390₽ / 1990₸\n'
-        url = 'https://skillbox.ru/webdesign/'
+        text = '<strong>[Skillbox] Таргетированная реклама Вконтакте</strong>\n\n<strong>Описание:</strong>\nКурс проводится совместно с «Церебро» и HiConversion и одобрен командой «ВКонтакте». В программе девять блоков: от введения в таргетинг до форматов отчетности. Студентов учат анализировать рынок и аудиторию, разрабатывать контент-стратегию, использовать все возможности «Церебро Таргет», разбираться в форматах рекламы, работать с отчетами и воронкой продаж.\n\n<strong>Учат всему:</strong>\n🌠от того, как писать статьи и оформлять группу;\n🌠до основ парсинга и рассылок;\n\n🤢Цена курса: ̶3̶0̶ ̶0̶0̶0̶₽̶ ̶ ̶/̶ ̶1̶7̶3̶ ̶2̶0̶0̶₸̶\n🤑Наша цена: 390₽ / 1990₸\n'
+        url = 'https://skillbox.ru/targetvk/'
         photo = skillbox_courses[4]
     elif message.text == 'skillbox7':
         text = '<strong>[SkillBox] Сквозная аналитика </strong>\n \n<strong>Описание:</strong>\nВы научитесь настраивать аналитику для всех каналов продвижения, чтобы выжимать максимум из рекламы, принимать решения на основе точных данных и не терять деньги.\n \n<strong>Вы научитесь:</strong>\n🌟Отслеживать путь клиента в воронке продаж\n🌟Создавать системы сквозной аналитики\n🌟Оценивать эффективность рекламы\n🌟Собирать статистику по всем каналам сразу\n🌟Анализировать данные\n🌟Создавать наглядные отчёты\n \n🤢Цена курса:  ̶5̶0̶̶̶ ̶̶̶0̶̶̶0̶̶̶0̶̶̶₽̶̶̶̶̶̶̶ ̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶ ̶̶̶̶̶̶̶/̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶ ̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶2̶̶̶8̶̶̶9̶̶̶ ̶̶̶5̶̶̶0̶̶̶0̶̶̶₸̶̶̶̶̶̶̶ ̶̶̶̶̶̶̶̶̶̶̶̶̶̶\n🤑Наша цена: 390₽ / 1990₸\n\n\n'
@@ -1913,7 +2004,7 @@ def essential(message):
         url = 'https://otus.ru/lessons/basic-ios/?int_source=courses_catalog&int_term=programming'
         photo = otus_courses[0]
     elif message.text == 'otus2':
-        text = '<strong>[OTUS] iOS Разработчик. Продвинутый курс v 2.0</strong>\n \n<strong>Описание:</strong>\nПрограмма создана специально для iOS Developers с опытом работы в сфере разработки мобильных iOS-приложений от 1 года и более.\nОбучение построено исключительно на кейсах из практики разработки приложений в production. Мы будем решать сложные и хардкорные задачи с уровнем качества топовых приложений\n \n<strong>Вы научитесь:</strong>\n💣Применять GCD и решать проблемы многозадачности\n💣Работать с протоколами Sequence и Collection\n💣Использовать в проектах структуры данных, Generic Type, Associated Types и техники Type Erasure, PATs (Protocol with Associated Types)\n💣Грамотно работать с различными способами хранения данных (Core Data, Realm, Keychain, Cache)\n💣Применять Dependency Injection (DI) и модуляризации приложений для более комфортной командной разработки и покрытия тестами\n💣На практике изучите все плюсы и минусы известных методологий, подходов и парадигм (Protocol Oriented Programming, ООП, Reactive Programming)\n \n🤢Цена курса:  ̶7̶0̶ ̶0̶0̶0̶ ̶₽ ̶/̶ ̶4̶0̶5̶ ̶0̶0̶0̶ ̶₸̶\n🤑Наша цена: 390₽ / 1990₸\n'
+        text = '<strong>[OTUS] iOS Разработчик. Продвинутый курс v 2.0</strong>\n \n<strong>Описание:</strong>\nПрограмма создана специально для iOS Developers с опытом работы в сфере разработки мобильных iOS-приложений от 1 года и более.\nОбучение построено исключительно на кейсах из практики разработки приложений в production. Мы будем решать сложные и хардкорные задачи с уровнем качества топовых приложений\n \n<strong>Вы научитесь:</strong>\n💣Применять GCD и решать проблемы многозадачности\n💣Работать с протоколами Sequence и Collection\n💣Использовать в проектах структуры данных, Generic Type, Associated Types и техники Type Erasure, PATs (Protocol with Associated Types)\n \n🤢Цена курса:  ̶7̶0̶ ̶0̶0̶0̶ ̶₽ ̶/̶ ̶4̶0̶5̶ ̶0̶0̶0̶ ̶₸̶\n🤑Наша цена: 390₽ / 1990₸\n'
         url = 'https://otus.ru/lessons/advanced-ios/'
         photo = otus_courses[1]
     elif message.text == 'otus3':
@@ -1945,7 +2036,7 @@ def essential(message):
         url = 'https://otus.ru/lessons/razrabotchik-php/'
         photo = otus_courses[8]
     elif message.text == 'otus10':
-        text = '<strong>[OTUS] С++ для начинающих программистов</strong>\n<strong>Описание:</strong>\nКурс по разработке на C++ для начинающих программистов\nЗанятия в формате видео и проверочные тесты\nВсе необходимые знания и навыки для курса "Разработчик С++"\n<strong>Вы научитесь:</strong>\n🌟Классы и алгоритмы\n🌟Шаблоны классов и функций\n🌟Многопоточность\n🌟Исключения\n🌟Работа с сетью\n🤢Цена курса: ̶1̶5̶ ̶0̶0̶0̶ ̶₽ ̶/̶ ̶8̶6̶ ̶8̶0̶0̶ ̶₸̶\n🤑Наша цена: 390₽ / 1990₸ \n'
+        text = '<strong>[OTUS] С++ для начинающих программистов</strong>\n\n<strong>Описание:</strong>\nКурс по разработке на C++ для начинающих программистов\nЗанятия в формате видео и проверочные тесты\nВсе необходимые знания и навыки для курса "Разработчик С++"\n\n<strong>Вы научитесь:</strong>\n🌟Классы и алгоритмы\n🌟Шаблоны классов и функций\n🌟Многопоточность\n🌟Исключения\n🌟Работа с сетью\n\n🤢Цена курса: ̶1̶5̶ ̶0̶0̶0̶ ̶₽ ̶/̶ ̶8̶6̶ ̶8̶0̶0̶ ̶₸̶\n🤑Наша цена: 390₽ / 1990₸ \n'
         url = 'https://otus.ru/online/online-cpp/'
         photo = otus_courses[9]
     elif message.text == 'otus11':
@@ -1969,7 +2060,6 @@ def essential(message):
         url = 'https://otus.ru/lessons/avtomatizaciya-web-testirovaniya/?int_source=courses_catalog&int_term=testing'
         photo = otus_courses[14]
     if photo:
-        print(url)
         bot.send_photo(message.from_user.id, photo=photo, caption=text,
                        reply_markup=one_course(message.from_user.id, url, school),
                        parse_mode='html')
