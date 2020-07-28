@@ -1712,16 +1712,16 @@ def callbacks(call):
         if not query_with_fetchone("flag_copyright", call.from_user.id):
             update_flag_copyright(1, call.from_user.id)
             bot.send_message(chat_id=call.from_user.id,
-                             text='Если вы обладатель курса, то можете оставить жалобу здесь:\n@AltynsarynCopyrightBot')
+                             text='Если вы обладатель курса, то можете оставить жалобу здесь:\n@AldarKoseCopyBot')
     elif call.data == 'new_com':
         if not query_with_fetchone("flag_new_com", call.from_user.id):
             update_flag_new_com(1, call.from_user.id)
-            bot.send_message(call.from_user.id, text='Вы можете написать отзыв здесь:\n@AlynsarynCommentsBot')
+            bot.send_message(call.from_user.id, text='Вы можете написать отзыв здесь:\n@AldarKoseCommentsBot')
     elif call.data == 'comments':
         if not query_with_fetchone('flag_comments', call.from_user.id):
             update_flag_comments(1, call.from_user.id)
             bot.send_message(call.from_user.id,
-                             text='Здесь вы можете посмотреть отзывы здесь:\nhttps://t.me/joinchat/AAAAAFR7paS_hiUvmuspfw')
+                             text='Здесь вы можете посмотреть отзывы здесь:\nhttps://t.me/joinchat/AAAAAEz3WSAVAVuXgnxB1w')
     elif call.data == 'cancel':
         bot.delete_message(call.from_user.id, call.message.message_id)
         update_flag_for_cancel_payment(0, call.from_user.id)
