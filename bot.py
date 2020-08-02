@@ -11,6 +11,9 @@ from telebot import types
 from telebot.types import LabeledPrice
 from configparser import ConfigParser
 
+public_key = '48e7qUxn9T7RyYE1MVZswX1FRSbE6iyCj2gCRwwF3Dnh5XrasNTx3BGPiMsyXQFNKQhvukniQG8RTVhYm3iPq1frntH4wjn1hPohaesyWq7cbcbo6Z6TKF6brpYoUHkW76Eqn67arqBVhVoWnorjpaVsdy12gxNZ7kzwHXTb12UmDBPTBNUfPNnQWxWWR'
+secret_key = 'eyJ2ZXJzaW9uIjoiUDJQIiwiZGF0YSI6eyJwYXlpbl9tZXJjaGFudF9zaXRlX3VpZCI6ImNxcmx5ai0wMCIsInVzZXJfaWQiOiI3NzAwNjg4ODA0OCIsInNlY3JldCI6IjdiOWM3OGIwMzJkMTYzYmQwNGIzZTI5NGMwNGYzNDMwMGVmYmJmNzkyNDYyOGE4YWJiZDk2ODZlMDVhZGVhOGMifX0='
+
 
 def read_db_config(filename='config.ini', section='mysql'):
     """ Read database configuration file and return a dictionary object
@@ -617,7 +620,7 @@ def payment_method(client_id):
     return pm
 
 
-def credit_keyboard( url, client_id):
+def credit_keyboard(url, client_id):
     ck = types.InlineKeyboardMarkup(row_width=1)
     but_1 = types.InlineKeyboardButton(text='Оплатить ', url=url)
     but_2 = types.InlineKeyboardButton(text='Назад',
@@ -657,7 +660,7 @@ def gb_school():
     gb = types.InlineKeyboardMarkup()
     but_1 = types.InlineKeyboardButton('Список курсов', switch_inline_query_current_chat='GeekBrains')
     but_2 = types.InlineKeyboardButton("Купить все от GeekBrains",
-                                       callback_data=but_1.switch_inline_query_current_chat + '16')
+                                       callback_data=but_1.switch_inline_query_current_chat + 'Full')
     but_3 = types.InlineKeyboardButton('Назад', switch_inline_query_current_chat='courses')
     gb.add(but_1)
     gb.add(but_2)
@@ -669,7 +672,7 @@ def sb_school():
     sb = types.InlineKeyboardMarkup()
     but_1 = types.InlineKeyboardButton('Список курсов', switch_inline_query_current_chat='SkillBox')
     but_2 = types.InlineKeyboardButton(text="Купить все от SkillBox",
-                                       callback_data=but_1.switch_inline_query_current_chat + '16')
+                                       callback_data=but_1.switch_inline_query_current_chat + 'Full')
     but_3 = types.InlineKeyboardButton('Назад', switch_inline_query_current_chat='courses')
     sb.add(but_1)
     sb.add(but_2)
@@ -681,7 +684,7 @@ def ud_school():
     ud = types.InlineKeyboardMarkup()
     but_1 = types.InlineKeyboardButton('Список курсов ', switch_inline_query_current_chat='Udemy')
     but_2 = types.InlineKeyboardButton("Купить все от Udemy",
-                                       callback_data=but_1.switch_inline_query_current_chat + '16')
+                                       callback_data=but_1.switch_inline_query_current_chat + 'Full')
     but_3 = types.InlineKeyboardButton('Назад', switch_inline_query_current_chat='courses')
     ud.add(but_1)
     ud.add(but_2)
@@ -693,7 +696,7 @@ def ot_school():
     ud = types.InlineKeyboardMarkup()
     but_1 = types.InlineKeyboardButton('Список курсов', switch_inline_query_current_chat='OTUS')
     but_2 = types.InlineKeyboardButton("Купить все от OTUS",
-                                       callback_data=but_1.switch_inline_query_current_chat + '16')
+                                       callback_data=but_1.switch_inline_query_current_chat + 'Full')
     but_3 = types.InlineKeyboardButton('Назад', switch_inline_query_current_chat='courses')
     ud.add(but_1)
     ud.add(but_2)
@@ -705,7 +708,7 @@ def wb_school():
     ud = types.InlineKeyboardMarkup()
     but_1 = types.InlineKeyboardButton('Список курсов', switch_inline_query_current_chat='WebForMySelf')
     but_2 = types.InlineKeyboardButton("Купить все от WebForMySelf",
-                                       callback_data=but_1.switch_inline_query_current_chat + '16')
+                                       callback_data=but_1.switch_inline_query_current_chat + 'Full')
     but_3 = types.InlineKeyboardButton('Назад', switch_inline_query_current_chat='courses')
     ud.add(but_1)
     ud.add(but_2)
@@ -717,12 +720,21 @@ def nt_school():
     ud = types.InlineKeyboardMarkup()
     but_1 = types.InlineKeyboardButton('Список курсов', switch_inline_query_current_chat='Netology')
     but_2 = types.InlineKeyboardButton("Купить все от Netology",
-                                       callback_data='Netology16')
+                                       callback_data='NetologyFull')
     but_3 = types.InlineKeyboardButton('Назад', switch_inline_query_current_chat='courses')
     ud.add(but_1)
     ud.add(but_2)
     ud.add(but_3)
     return ud
+
+
+def full_school(call):
+    fs = types.InlineKeyboardMarkup()
+    but_1 = types.InlineKeyboardButton(text='Купить', callback_data=call[:-4] + '16')
+    but_2 = types.InlineKeyboardButton(text='Отмена', callback_data='delete_this_message')
+    fs.add(but_1)
+    fs.add(but_2)
+    return fs
 
 
 def all_courses():
@@ -802,10 +814,10 @@ def schools(query):
             try:
                 content[query_with_fetchone('position_of_pointer', query.from_user.id)] = content[query_with_fetchone(
                     'position_of_pointer', query.from_user.id)][:-25] + query.text + ' ' + content[
-                                                                                                   query_with_fetchone(
-                                                                                                       'position_of_pointer',
-                                                                                                       query.from_user.id)][
-                                                                                               -25:]
+                                                                                               query_with_fetchone(
+                                                                                                   'position_of_pointer',
+                                                                                                   query.from_user.id)][
+                                                                                           -25:]
             except:
                 pass
             file.writelines(content)
@@ -1575,7 +1587,8 @@ def callbacks(call):
             file.writelines(content)
     except Exception as e:
         print(e)
-        file.writelines(content)
+        with open('stats.txt', mode='w', encoding="utf-8") as file:
+            file.writelines(content)
         pass
     if 'suc' in call.data:
         try:
@@ -1631,7 +1644,7 @@ def callbacks(call):
                 else:
                     url = url[0] + '\n' + url[2]
             else:
-                url = 'https://docs.google.com/document/d/1YICN4AqVNM68Mb3m6ArJO4TunhN2guyRXzcdQKi5VQc/edit?usp=sharing'
+                url = 'https://docs.google.com/document/d/1ys-Jpyg4kwZuVKTYUJNH3xzRhC-QmDf1Vj8XBjjkxrE/edit'
             chat_id = ''.join([i for i in call.data[-13:] if i.isdigit()])
             bot.send_message(909435473,
                              text='Заказ под номером  ' + chat_id + ' подтвержден от @' + query_with_fetchone('user',
@@ -1641,6 +1654,20 @@ def callbacks(call):
         except Error as e:
             print(e)
             pass
+    elif 'Full' in call.data:
+        update_payment_course(call.data[:21], call.from_user.id)
+        if 'WebForMySelf' in call.data:
+            bot.send_photo(call.from_user.id, photo='AgACAgIAAxkBAAICn18m-FpBRzuO5ixHkmQ20VafeJpkAAKPsDEbNyw5SYUAAVCTvWj-4VR165IuAAMBAAMCAANtAANGlQQAARoE', caption='<b>15 курсов от топового онлайн-университета</b>\n\n 🤢Цена курса:   ̶1̶6̶9̶ ̶0̶1̶0̶₽̶ ̶/̶ ̶9̶5̶9̶ ̶9̶9̶0̶₸̶\n🤑Наша цена: 888₽ / 4 990₸ ', reply_markup=full_school(call.data))
+        elif 'OTUS' in call.data:
+            bot.send_photo(call.from_user.id, photo='AgACAgIAAxkBAAICnl8m-FrlUqepVmYm1ZeDHoJJIxsCAAKOsDEbNyw5SZh15gZf6hirPdbGki4AAwEAAwIAA20AAzMxBQABGgQ', caption='<b>15 курсов от топового онлайн-университета</b>\n\n 🤢Цена курса:   ̶8̶3̶0̶ ̶3̶0̶0̶₽̶ ̶/̶ ̶4̶ ̶7̶1̶3̶ ̶9̶9̶0̶₸̶\n🤑Наша цена: 888₽ / 4 990₸ ', reply_markup=full_school(call.data))
+        elif 'SkillBox' in call.data:
+            bot.send_photo(call.from_user.id, photo='AgACAgIAAxkBAAICoV8m-Fog71e36wushxdoHzbj8sY2AAKRsDEbNyw5SfjruuihWSA1rFoVlS4AAwEAAwIAA20AA_VcAgABGgQ', caption='<b>15 курсов от топового онлайн-университета</b>\n\n 🤢Цена курса:   ̶8̶2̶4̶ ̶0̶0̶0̶₽̶ ̶/̶ ̶4̶ ̶6̶8̶0̶ ̶9̶9̶0̶₸̶\n🤑Наша цена: 888₽ / 4 990₸ ', reply_markup=full_school(call.data))
+        elif 'Udemy' in call.data:
+            bot.send_photo(call.from_user.id, photo='AgACAgIAAxkBAAICoF8m-FpfdYth6qqNKBAqjMsn1c9EAAKQsDEbNyw5Sby-cYSselILWEXCki4AAwEAAwIAA20AA-85BQABGgQ', caption='<b>15 курсов от топового онлайн-университета</b>\n\n 🤢Цена курса:   ̶8̶5̶ ̶7̶0̶0̶₽̶ ̶/̶ ̶4̶8̶6̶ ̶5̶9̶0̶₸̶\n🤑Наша цена: 888₽ / 4 990₸ ', reply_markup=full_school(call.data))
+        elif 'Netology' in call.data:
+            bot.send_photo(call.from_user.id, photo='AgACAgIAAxkBAAICol8m-FpYR9uD0aEHp-wuOPycPyREAAKSsDEbNyw5SYjzxETrjAAB92oLIJUuAAMBAAMCAANtAANXYAIAARoE', caption='<b>15 курсов от топового онлайн-университета</b>\n\n 🤢Цена курса:   ̶5̶8̶2̶ ̶1̶8̶0̶₽̶ ̶/̶ ̶3̶ ̶3̶0̶6̶ ̶9̶9̶0̶₸̶\n🤑Наша цена: 888₽ / 4 990₸ ', reply_markup=full_school(call.data))
+        elif 'GeekBrains' in call.data:
+            bot.send_photo(call.from_user.id, photo='AgACAgIAAxkBAAICnV8m-FoSW7W4fy5pfHV_CEy_qj3yAAKNsDEbNyw5SSors3SoEOle9bDvkS4AAwEAAwIAA20AAw0gBQABGgQ', caption='<b>15 курсов от топового онлайн-университета</b>\n\n 🤢Цена курса:   ̶8̶6̶3̶ ̶0̶7̶0̶₽̶ ̶/̶ ̶4̶ ̶9̶0̶1̶ ̶9̶9̶0̶₸̶\n🤑Наша цена: 888₽ / 4 990₸ ', reply_markup=full_school(call.data))
     elif 'pay' in call.data:
         if not query_with_fetchone('flag_for_confirmation_of_payment', call.from_user.id):
             bot.send_message(call.from_user.id,
@@ -1652,43 +1679,56 @@ def callbacks(call):
             if 'card' == call.data[-4:]:
                 bot.edit_message_text(chat_id=call.from_user.id, message_id=call.message.message_id,
                                       text='Вы выбрали оплату банковской картой:\n',
-                                      reply_markup=credit_keyboard('https://oplata.qiwi.com/form?invoiceUid=044ce148-f081-4494-83ff-bcecdc52df0a',
-                                                                   call.from_user.id))
+                                      reply_markup=credit_keyboard(
+                                          'https://qiwi.com/payment/form/99999?extra%5B%27account%27%5D=ALDARKOSE&amountInteger=888&amountFraction=0&currency=643&blocked[0]=account&extra%5B%27accountType%27%5D=nickname&blocked[1]=sum',
+                                          call.from_user.id))
             elif 'wallet' == call.data[-6:]:
                 bot.edit_message_text(chat_id=call.from_user.id, message_id=call.message.message_id,
                                       text='Вы выбрали оплату через Qiwi кошелек:\n',
-                                      reply_markup=credit_keyboard('https://oplata.qiwi.com/form?invoiceUid=044ce148-f081-4494-83ff-bcecdc52df0a',
-                                                                   call.from_user.id))
+                                      reply_markup=credit_keyboard(
+                                          'https://qiwi.com/payment/form/99999?extra%5B%27account%27%5D=ALDARKOSE&amountInteger=888&amountFraction=0&currency=643&blocked[0]=account&extra%5B%27accountType%27%5D=nickname&blocked[1]=sum',
+                                          call.from_user.id))
             else:
                 bot.edit_message_text(chat_id=call.from_user.id, message_id=call.message.message_id,
                                       text='Вы выбрали оплату через Kaspi Gold\nПереведите 4 990₸ / 888₽ на карту: \n              5169 4971 7975 8408\n',
-                                      reply_markup=credit_keyboard('https://kaspi.kz/Transfers/Landing/g2g', call.from_user.id))
+                                      reply_markup=credit_keyboard('https://kaspi.kz/Transfers/Landing/g2g',
+                                                                   call.from_user.id))
         elif 'all' in call.data:
             if 'card' == call.data[-4:]:
                 bot.edit_message_text(chat_id=call.from_user.id, message_id=call.message.message_id,
                                       text='Вы выбрали оплату банковской картой:\n',
-                                      reply_markup=credit_keyboard('https://oplata.qiwi.com/form?invoiceUid=d09b3089-d352-4762-b56d-784b0a7898c4', call.from_user.id))
+                                      reply_markup=credit_keyboard(
+                                          'https://qiwi.com/payment/form/99999?extra%5B%27account%27%5D=ALDARKOSE&amountInteger=1699&amountFraction=0&currency=643&blocked[0]=account&extra%5B%27accountType%27%5D=nickname&blocked[1]=sum',
+                                          call.from_user.id))
             elif 'wallet' == call.data[-6:]:
                 bot.edit_message_text(chat_id=call.from_user.id, message_id=call.message.message_id,
                                       text='Вы выбрали оплату через Qiwi кошелек:\n',
-                                      reply_markup=credit_keyboard('https://oplata.qiwi.com/form?invoiceUid=d09b3089-d352-4762-b56d-784b0a7898c4', call.from_user.id))
+                                      reply_markup=credit_keyboard(
+                                          'https://qiwi.com/payment/form/99999?extra%5B%27account%27%5D=ALDARKOSE&amountInteger=1699&amountFraction=0&currency=643&blocked[0]=account&extra%5B%27accountType%27%5D=nickname&blocked[1]=sum',
+                                          call.from_user.id))
             else:
                 bot.edit_message_text(chat_id=call.from_user.id, message_id=call.message.message_id,
                                       text='Вы выбрали оплату через Kaspi Gold\nПереведите 9 990₸ / 1 699₽ на карту: \n            5169 4971 7975 8408',
-                                      reply_markup=credit_keyboard('https://kaspi.kz/Transfers/Landing/g2g', call.from_user.id))
+                                      reply_markup=credit_keyboard('https://kaspi.kz/Transfers/Landing/g2g',
+                                                                   call.from_user.id))
         elif call.data[3:7] in ['Geek', 'Neto', 'OTUS', 'WebF', 'Udem', 'Skil']:
             if 'card' == call.data[-4:]:
                 bot.edit_message_text(chat_id=call.from_user.id, message_id=call.message.message_id,
                                       text='Вы выбрали оплату банковской картой:\n',
-                                      reply_markup=credit_keyboard('https://oplata.qiwi.com/form?invoiceUid=ce06c974-a2ec-4a97-af55-91f064d3e3f8', call.from_user.id))
+                                      reply_markup=credit_keyboard(
+                                          'https://qiwi.com/payment/form/99999?extra%5B%27account%27%5D=ALDARKOSE&amountInteger=333&amountFraction=0&currency=643&blocked[0]=account&extra%5B%27accountType%27%5D=nickname&blocked[1]=sum',
+                                          call.from_user.id))
             elif 'wallet' == call.data[-6:]:
                 bot.edit_message_text(chat_id=call.from_user.id, message_id=call.message.message_id,
                                       text='Вы выбрали оплату через Qiwi кошелек:\n',
-                                      reply_markup=credit_keyboard('https://oplata.qiwi.com/form?invoiceUid=ce06c974-a2ec-4a97-af55-91f064d3e3f8', call.from_user.id))
+                                      reply_markup=credit_keyboard(
+                                          'https://qiwi.com/payment/form/99999?extra%5B%27account%27%5D=ALDARKOSE&amountInteger=333&amountFraction=0&currency=643&blocked[0]=account&extra%5B%27accountType%27%5D=nickname&blocked[1]=sum',
+                                          call.from_user.id))
             else:
                 bot.edit_message_text(chat_id=call.from_user.id, message_id=call.message.message_id,
                                       text='Вы выбрали оплату через Kaspi Gold\nПереведите 1 990₸ / 333₽ на карту: \n              5169 4971 7975 8408',
-                                      reply_markup=credit_keyboard('https://kaspi.kz/Transfers/Landing/g2g', call.from_user.id))
+                                      reply_markup=credit_keyboard('https://kaspi.kz/Transfers/Landing/g2g',
+                                                                   call.from_user.id))
     elif call.data == 'confirmed':
         try:
             bot.send_message(chat_id=909435473,
@@ -1721,7 +1761,7 @@ def callbacks(call):
         if not query_with_fetchone('flag_comments', call.from_user.id):
             update_flag_comments(1, call.from_user.id)
             bot.send_message(call.from_user.id,
-                             text='Здесь вы можете посмотреть отзывы здесь:\nhttps://t.me/joinchat/AAAAAEz3WSAVAVuXgnxB1w')
+                             text='Здесь вы можете посмотреть отзывы:\nhttps://t.me/AldarKoseComments')
     elif call.data == 'cancel':
         bot.delete_message(call.from_user.id, call.message.message_id)
         update_flag_for_cancel_payment(0, call.from_user.id)
@@ -1834,8 +1874,8 @@ def startpg(message):
                    photo='AgACAgIAAxkBAAOUXx8Pv-iXlU6c1JGK29OpN0xcOToAAqKvMRv_w_lIh6sY3NELGiO37-mSLgADAQADAgADbQAD5lYEAAEaBA',
                    parse_mode='html')
     main_menu = types.InlineKeyboardMarkup(row_width=2)
-    but_1 = types.InlineKeyboardButton(text='Онлайн-университы', switch_inline_query_current_chat='courses')
-    but_2 = types.InlineKeyboardButton(text='Связаваться с модератором', callback_data='moderator')
+    but_1 = types.InlineKeyboardButton(text='Онлайн-университеты', switch_inline_query_current_chat='courses')
+    but_2 = types.InlineKeyboardButton(text='Связаться с модератором', callback_data='moderator')
     but_3 = types.InlineKeyboardButton(text='Для правообладателей', callback_data='copyright')
     but_4 = types.InlineKeyboardButton(text='Отзывы', callback_data='comments')
     but_5 = types.InlineKeyboardButton(text='Оставить отзыв', callback_data='new_com')
@@ -1888,7 +1928,6 @@ def essential(message):
     update_flag_comments(0, message.from_user.id)
     update_payment_course(message.text, message.from_user.id)
     school = ''.join([i for i in message.text if i.isalpha()])
-    url = 'https://www.geeksforgeeks.org/python-ways-to-remove-numeric-digits-from-given-string/'
     try:
         i = 0
         while query_with_fetchone('previous_message_id', message.from_user.id) + i < message.message_id:
@@ -1898,10 +1937,10 @@ def essential(message):
         update_previous_message_id(message.message_id, message.from_user.id)
     except:
         update_previous_message_id(message.message_id, message.from_user.id)
-    if message.text == 'Все 999 курса за 100кзт':
+    if message.text == 'Все 90 курсов за 9 990₸ / 1 699₽':
         bot.send_photo(message.from_user.id,
                        photo='AgACAgIAAxkBAAIORV8dRTR-QS2LbL9pvCXhBcZ_mdKdAAInrzEbWwPwSJzKGpKODmu4jWkYlS4AAwEAAwIAA20AAzMAAQIAARoE',
-                       caption='Dai deneg', reply_markup=all_courses())
+                       caption='<b>90 топовых курсов</b>\n\n', reply_markup=all_courses())
     elif message.text == 'GeekBrains🧠0️⃣1️⃣':
         text = '<strong>[GeekBrains] Профессия Разработчик игр</strong>\n \n<strong>Описание:</strong>\nЭта профессия позволяет исполнить мечту увлеченного геймера: сделать игру, в которой не будет недостатков. Разработчик игр создает концепцию и прототип игры, выбирает средства для реализации проекта.\n \n<strong>Вы научитесь:</strong>\n🎮Git\n🎮Основы C#\n🎮Unity и C#\n🎮Архитектура и шаблоны проектирования\n \n🤢Цена курса: ̶7̶2̶ ̶0̶0̶0̶₽ ̶/̶ ̶4̶2̶1̶ ̶9̶0̶0̶₸̶\n🤑Наша цена: 333₽ / 1990₸ \n'
         url = 'https://geekbrains.ru/professions/game_developer'
