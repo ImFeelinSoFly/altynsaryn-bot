@@ -1693,7 +1693,7 @@ def callbacks(call):
             if 'all' not in call.data.split()[0]:
                 url = school[i]
                 if url[1]:
-                    url = url[0] + 'Пароль:\n' + url[1] + '\n' + url[2]
+                    url = url[0] + '\nПароль:\n' + url[1] + '\n' + url[2]
                 else:
                     url = url[0] + '\n' + url[2]
             else:
